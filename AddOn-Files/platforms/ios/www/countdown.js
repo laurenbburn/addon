@@ -1,3 +1,5 @@
+// Modified from http://www.sourcecodetuts.com/javascript/26/javascript-5-seconds-countdown
+
 var max_time = 8;
 var cinterval;
  
