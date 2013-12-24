@@ -91,12 +91,23 @@ body {
 }
 
 @font-face {
+	font-family: 'Entypo';
+	src: url('Entypo/entypo.eot');
+	src:url('Entypo/entypo.eot?#iefix') format('embedded-opentype'),
+		url('Entypo/entypo.woff') format('woff'),
+		url('Entypo/entypo.ttf') format('truetype'),
+		url('Entypo/entypo.svg#Entypo') format('svg');
+	font-weight: normal;
+	font-style:normal;
+}
+
+@font-face {
 	font-family: 'Web Symbols';
 	src: url('webSymbols/websymbols.eot');
 	src:url('webSymbols/websymbols.eot?#iefix') format('embedded-opentype'),
 		url('webSymbols/websymbols.woff') format('woff'),
 		url('webSymbols/websymbols.ttf') format('truetype'),
-		url('webSymbols/websymbols.svg#Entypo+Social') format('svg');
+		url('webSymbols/websymbols.svg#Web+Symbols') format('svg');
 	font-weight: normal;
 	font-style:normal;
 }
@@ -177,6 +188,14 @@ a {
     font-size:22px;
 }
 
+.icon2{
+	font-family:Entypo;
+	float:right;
+	line-height:60px;
+	padding-right:18px;
+	font-size:54px;
+}
+
 /* Buttons */
 .btn_primary {
 	background-color:#B8B8B8;
@@ -223,7 +242,7 @@ button{
 	font-family:Avenir, Helvetica, san-serif;
 	font-weight:bold;
 	line-height:60px;
-	padding:0 16px 0 18px;
+	padding:0 15px 0 18px;
 }
 
 #players li {
@@ -241,7 +260,7 @@ input[type="text"] {
 	
 }
 
-.swatch span{
+.swatch {
 	height:32px;
 	border-radius:16px;
 	border:2px dashed #999;
@@ -281,6 +300,23 @@ input[type="radio"] + span {
 	width:42px;
 	height:42px;
 	background:#444;
+}
+
+
+/*detail image */
+
+#detail_image{
+	height:426px;
+	width:320px;
+}
+
+/*detail footer */
+
+#tags{
+height:67px;
+border-top:1px solid #ccc;
+position:relative;
+bottom:0px;
 }
 
 /* Flick */
