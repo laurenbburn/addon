@@ -121,7 +121,7 @@ body {
 }
 
 .appW {
-    background-color:#E6E6E6;   
+    background-color:#fff;   
     width:320px;
     margin:0 auto;
     min-height:100%;
@@ -224,16 +224,20 @@ a {
 	margin:auto;
 }
 
-button{
+.add{
 	height:60px;
 	width:100%;
-	padding:0;
-	border:none;
-	background:none;
-	cursor:pointer;
 	font-family:'Avenir', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:24px;
     font-weight:bold;
+}
+
+button{
+	border:none;
+	background:none;
+	padding:0;
+	margin:0;
+	cursor:pointer;
 }
 
 /* Add Players form */
@@ -253,10 +257,13 @@ input[type="text"] {
 	height:36px;
 	border:none;
 	border-radius:6px;
-	width:206px;
-	padding:0px;
+	width:188px;
+	padding:0px 9px;
+	line-height:19px;
 	position:relative;
 	bottom:2px;
+	font-size:14px;
+	font-family:'Source Sans Pro', Helvetica, sans-serif;
 	
 }
 
@@ -275,8 +282,12 @@ input[type="text"] {
 /* Color Selection Form */
 
 #swatches{
-width:255px;
-margin: 0 auto;
+width:253px;
+position:absolute;
+left:50%;
+top:50%;
+height:278px;
+margin: -148px 0 0 -126px;
 }
 
 input[type="radio"]{
@@ -284,8 +295,11 @@ display:none;
 	
 }
 
-input[type="radio"]:checked + span {
-	background-color:#ffa;
+input[type="radio"]:checked + span.colorButton {
+	border:1px solid black;
+	border-radius:50%;
+	width:40px;
+	height:40px;
 
 }
 
@@ -299,9 +313,56 @@ input[type="radio"] + span {
 .colorButton {
 	width:42px;
 	height:42px;
-	background:#444;
+	color:#444;
 }
 
+#purple{
+	background:#8200FF;
+}
+
+#pink{
+	background:#FF46DC;
+}
+
+#red{
+	background:#FF003C;
+}
+
+#orange{
+	background:#FF6414;
+}
+
+#yellow{
+background:#FFDC14
+}
+
+#green{
+	background:#78F000;
+}
+
+#dark-green{
+	background:#00AF1E;
+}
+
+#cyan{
+	background:#00DCDC;
+}
+
+#blue{
+	background:#0046FF;
+}
+
+#grey{
+	background:#B4B4B4;
+}
+
+#brown{
+	background:#783C1E;
+}
+
+#black{
+	background:#000;
+}
 
 /*detail image */
 
