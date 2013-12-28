@@ -25,27 +25,32 @@ function saveDB(name, db){
 	localStorage[name] = JSON.stringify(db);
 }
 
+//Creates a new player when the "+" button is pushed
 function create_Player(){
-	// date = new Date();
-	//var d = (date.getMonth() + 1) + "/"	+ date.getDate() + "/" + (date.getYear()-100);
-	//var name = dgID('tripsy').value
-	//var pos;      	
+     	//Create player array with elements
 		var newPlayer = {
 			id: i+1,
 			number:"−",
 			name:"",
 			color:""
 		}
+		//add array to database
 		addOn_db.push(newPlayer)
+		//add player row in html
 		players.append(create_Row(newPlayer));
+		//save database
 		saveDB("addOnDB", addOn_db)
+		//update the players
 		updatePlayers()
 	}		
 
+//Deletes all players from the database when the back button is pressed.
 function delete_Players(){
+
 	addOn_db = loadDB("addOnDB")
+	//remove database from local storage
 	localStorage.removeItem('addOnDB');
-	
+	//update players
 	updatePlayers()
 }
 
@@ -53,25 +58,27 @@ function delete_Players(){
 //Run on load
 $(function(){
 	addOn_db = loadDB("addOnDB")
-	//if (addOn_db.length > 0)
-		//active_Trip = atlas_db[atlas_db.length-1]
 	
 	//Get a reference to the divs to edit
 	players = $("#thePlayers");
 
-	// Populate the my trips page with old trips
+	// Populate the players 
 	updatePlayers();
 
 });
 
+//Updates the player list after adding or deleting a player
 function updatePlayers(){
+	//empty div
 	players.empty();
+	//repopulate div with new list from database
 	for(var j=0; j<addOn_db.length; j++){
 		var player = addOn_db[j];
 		var row = create_Row(player);
 		players.append(row);
 	}
 	
+	//gets rid of plus button if 4 players exist
 	i = addOn_db.length;
 	var addButton = $("#add_player")
 	
@@ -109,6 +116,7 @@ function initial(){
 	
 }
 
+//Creates the html li for a player
 function create_Row(player){
 	var please = player.id;
 	var playerList = $("#thePlayers");
@@ -125,6 +133,7 @@ function create_Row(player){
 	row.append(colorLink);
 	row.prop("data", player);
 	
+	//Deletes a player from the database and html list if the minus button is clicked
 	numberButton.click(function(){
 	addOn_db = loadDB("addOnDB")
 	var json = JSON.parse(localStorage["addOnDB"]);
@@ -134,7 +143,6 @@ function create_Row(player){
 			addOn_db.pop(player);
 
 			updatePlayers()
-			//window.location.reload();
 	});
 
 	return row;
