@@ -269,11 +269,11 @@ input[type="text"] {
 
 .swatch {
 	height:32px;
-	border-radius:16px;
+	width:32px;
+	border-radius:50%;
 	border:2px dashed #999;
 	display:block;
 	float:right;
-	padding: 0 16px;
 	margin-top:12px;
 	margin-right:18px;
 }
@@ -333,7 +333,7 @@ input[type="radio"] + span {
 }
 
 #yellow{
-background:#FFDC14
+background:#FFDC14;
 }
 
 #green{

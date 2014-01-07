@@ -1,8 +1,10 @@
-var addOn_dB, players, ID, name1, name2, name3, name4;
+var addOn_dB, players, name1, name2, name3, name4;
 
-addOn_db = loadDB("addOnDB")
 
-var i; 
+addOn_db = loadDB("addOnDB");
+
+var i;
+
 
 
 //Loads the database from a string in localStorage
@@ -162,11 +164,25 @@ function create_Row(player){
 	return row;
 }
 
+//gets rid of plus button if 4 players exist	
+function check_Add(){
+	i = addOn_db.length;
+	var addButton = $("#add_player")
+	
+	if (i==4){
+		addButton.css('display', 'none')
+	}else{
+		addButton.css('display', 'block')
+	}
+}
+
 //when swatch is clicked grabs the id and runs save_Names()
-$(document).on("click", ".swatch", function(e) {
-    alert(this.id);
+$(document).on("click", ".swatch", function() {
+    var ID = this.id;
+	$.cookie("ID", ID);
     save_Names();
     });
+    
     
 //Saves input values as names in the database
 function save_Names(){
@@ -198,20 +214,6 @@ function save_Names(){
 	localStorage["addOnDB"] = JSON.stringify(json);}
     }
 
-
-
-//gets rid of plus button if 4 players exist	
-function check_Add(){
-	i = addOn_db.length;
-	var addButton = $("#add_player")
-	
-	if (i==4){
-		addButton.css('display', 'none')
-	}else{
-		addButton.css('display', 'block')
-	}
-}
-
 //fills input forms with values from the database onload
 $(document).ready(function(){
 	addOn_db = loadDB("addOnDB")
@@ -219,17 +221,66 @@ $(document).ready(function(){
 	for (var i in json){
 			if(json[i].id == 1){
 				name1 = json[i].name
+				$("[name='1']").val(name1);
 			}else if(json[i].id == 2){
 				name2 = json[i].name
+				$("[name='2']").val(name2);
 			}else if(json[i].id == 3){
 				name3 = json[i].name
+				$("[name='3']").val(name3);
 			}else{
 				name4 = json[i].name
+				$("[name='4']").val(name4);
 			}
 		}
-	$("[name='1']").val(name1);
-	$("[name='2']").val(name2);
-	$("[name='3']").val(name3);
-	$("[name='4']").val(name4);
+});
+
+    
+$(document).on("click", "#color_btn", function(e) {
+    colVal = $('input[name="selection"]:checked', '#swatches').val();
+    playID = $.cookie("ID");
+    
+    function setItemColor(json){
+		for (var i in json){
+			if(json[i].id == playID){
+				json[i].color = colVal;
+			}
+		}
+		return json;
+	};
+	
+	addOn_db = loadDB("addOnDB")
+	var json = JSON.parse(localStorage["addOnDB"]);
+	json = setItemColor(json);
+	console.log(json);
+	localStorage["addOnDB"] = JSON.stringify(json);
+    
+	});
+    
+$(document).ready(function(){
+	addOn_db = loadDB("addOnDB")
+	var json = JSON.parse(localStorage["addOnDB"]);
+	for (var i in json){
+			if(json[i].id == 1){
+				col1 = json[i].color
+				if(col1 != ''){
+				$("#1").css({"border":"none", "height":"36px", "width":"36px", "background": col1})}
+			}else if(json[i].id == 2){
+				col2 = json[i].color
+				if(col2 != ''){
+				$("#2").css({"border":"none", "height":"36px", "width":"36px", "background": col2})}
+			}else if(json[i].id == 3){
+				col3 = json[i].color
+				if(col3 != ''){
+				$("#3").css({"border":"none", "height":"36px", "width":"36px", "background": col3})}
+			}else if(json[i].id == 4){
+				col4 = json[i].color
+				if(col4 != ''){
+				$("#4").css({"border":"none", "height":"36px", "width":"36px", "background": col4})}	
+			}
+
+		}
+		
+		
 });
 
