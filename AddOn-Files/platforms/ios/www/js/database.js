@@ -235,16 +235,21 @@ $(document).ready(function(){
 		}
 });
 
-    
+//checks if color has already been chosen, and if not adds to player's array.    
 $(document).on("click", "#color_btn", function(e) {
     colVal = $('input[name="selection"]:checked', '#swatches').val();
     playID = $.cookie("ID");
     
     function setItemColor(json){
 		for (var i in json){
-			if(json[i].id == playID){
-				json[i].color = colVal;
+			if(json[i].color == colVal){
+				alert("This color is already taken");
+				e.preventDefault();
+			}else{ 
+				if(json[i].id == playID){
+					json[i].color = colVal;
 			}
+		}
 		}
 		return json;
 	};
@@ -256,7 +261,8 @@ $(document).on("click", "#color_btn", function(e) {
 	localStorage["addOnDB"] = JSON.stringify(json);
     
 	});
-    
+
+//fills the swatches with their colors on page load    
 $(document).ready(function(){
 	addOn_db = loadDB("addOnDB")
 	var json = JSON.parse(localStorage["addOnDB"]);
