@@ -182,18 +182,24 @@ a {
 .icon{
 	font-family:'Web Symbols';
 	text-transform:lowercase;
-	float:left;
 	line-height:58px;
-    padding-left:18px;
     font-size:22px;
 }
 
 .icon2{
 	font-family:Entypo;
-	float:right;
 	line-height:60px;
+	font-size:60px;
+}
+
+.right{
 	padding-right:18px;
-	font-size:54px;
+	float:right;
+}
+
+.left{
+	padding-left:18px;
+	float:left;
 }
 
 /* Buttons */
@@ -296,10 +302,10 @@ display:none;
 }
 
 input[type="radio"]:checked + span.colorButton {
-	border:1px solid black;
+	border:2px solid black;
 	border-radius:50%;
-	width:40px;
-	height:40px;
+	width:38px;
+	height:38px;
 
 }
 
@@ -317,39 +323,39 @@ input[type="radio"] + span {
 }
 
 #purple{
-	background:#8200FF;
+	background:#9752D4;
 }
 
 #pink{
-	background:#FF46DC;
+	background:#FF82C9;
 }
 
 #red{
-	background:#FF003C;
+	background:#F1445C;
 }
 
 #orange{
-	background:#FF6414;
+	background:#FF814B;
 }
 
 #yellow{
-background:#FFDC14;
+background:#FFD156;
 }
 
 #green{
-	background:#78F000;
+	background:#94DC5B;
 }
 
 #dark-green{
-	background:#00AF1E;
+	background:#39A54C;
 }
 
 #cyan{
-	background:#00DCDC;
+	background:#42DCC9;
 }
 
 #blue{
-	background:#0046FF;
+	background:#2B70E7;
 }
 
 #grey{
@@ -357,11 +363,11 @@ background:#FFDC14;
 }
 
 #brown{
-	background:#783C1E;
+	background:#965941;
 }
 
 #black{
-	background:#000;
+	background:#222222;
 }
 
 /*detail image */
@@ -380,31 +386,29 @@ position:relative;
 bottom:0px;
 }
 
-/* Flick */
+/* detail */
 
-#flickr_badge_uber_wrapper{
- width:320px;
+#gallery{
+	margin-top:5px;
 }
 
-#flickr_badge_wrapper {
-
+div.nomargin{
+	margin-right:0px;
 }
 
-.flickr_badge_image {
-	margin-left:2px;
-	margin-top:2px;
-	width:104px;
-	height:156px;
-	display:inline-block;
-	vertical-align:top;
-	background-color:#fff;
-
-}
-.flickr_badge_image img {
-	width:104px;
-	height:156px;
+.pic{
+	float:left;
+	margin:0 0 5px 5px;
+	width:100px;
+	height:100px;
 }
 
+.pic a{
+	width:100px;
+	height:100px;
+	text-indent:-99999px;
+	display:block;
+}
 
 
 .event {

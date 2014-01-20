@@ -134,7 +134,7 @@ function create_Row(player){
 	var playerList = $("#thePlayers");
 	var row = $("<li class='with_border'>");
 	var numberButton = $("<button class='numbers' type='button'>");
-	var nameInput = $("<input name = '"+please +"' type='text'>");
+	var nameInput = $("<input name = '"+please +"' type='text' maxlength='10'>");
 	var colorSpan = $("<span class='date'>");
 	var colorLink = $("<a id = '"+please +"' class= 'swatch' href= 'colors.html'>");
 	numberButton.text(player.number);
