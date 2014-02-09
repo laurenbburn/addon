@@ -218,7 +218,7 @@ void draw() {
     transitionScreen();
   }
  if(!blackbg && !drawingScreen && !drawingMode && !gameEnd &&!roundTransition){
-         saveFrame("image/line-####.png");
+         save("line-####.png");
          noLoop();
 }
 }
