@@ -218,7 +218,7 @@ void draw() {
   if (roundTransition) {  
     transitionScreen();
   }
-<<<<<<< HEAD:sketch_2_10/web-export/sketch_2_10.pde
+<<<<<<< HEAD:sketch_2_10/sketch_2_10.pde
   if (!blackbg && !drawingScreen && !drawingMode && !gameEnd &&!roundTransition) {
     saveFrame("image/line-####.png");
     noLoop();
@@ -228,7 +228,7 @@ void draw() {
          save("line-####.png");
          noLoop();
 }
->>>>>>> d09fee7b227398c332659aa6bb8199f1ec5fcc7a:sketch_1_20/sketch_1_20.pde
+>>>>>>> d09fee7b227398c332659aa6bb8199f1ec5fcc7a:sketch_1_20/web-export/sketch_1_20.pde
 }
 
 void paint_layout() {
