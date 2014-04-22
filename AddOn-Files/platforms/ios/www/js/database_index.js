@@ -73,9 +73,19 @@ function create_Player(){
 		check_Add()
 	}		
 
+//Deletes all players from the database when the back button is pressed.
+function delete_Players(){
+
+	addOn_db = loadDB("addOnDB")
+	//remove database from local storage
+	localStorage.removeItem('addOnDB');
+	//update players
+	updatePlayers()
+}
+
 
 //Run on load
-$(document).ready(function(){
+window.onload = function(){
 	addOn_db = loadDB("addOnDB")
 	img_db = loadDB("imgDB")
 	
@@ -86,7 +96,7 @@ $(document).ready(function(){
 	updatePlayers();
 	check_Add();
 
-});
+};
 
 //Updates the player list after adding or deleting a player
 function updatePlayers(){
@@ -116,7 +126,7 @@ function initial(){
 		name:"",
 		color:""
 	}
-	addOn_db.length = 0;
+	
 	addOn_db.push(newPlayer1)
 	addOn_db.push(newPlayer2)
 	players.append(create_Row(newPlayer1));
@@ -214,26 +224,7 @@ function save_Names(){
 	localStorage["addOnDB"] = JSON.stringify(json);}
     }
 
-//fills input forms with values from the database onload
-$(document).ready(function(){
-	addOn_db = loadDB("addOnDB")
-	var json = JSON.parse(localStorage["addOnDB"]);
-	for (var i in json){
-			if(json[i].id == 1){
-				name1 = json[i].name
-				$("[name='1']").val(name1);
-			}else if(json[i].id == 2){
-				name2 = json[i].name
-				$("[name='2']").val(name2);
-			}else if(json[i].id == 3){
-				name3 = json[i].name
-				$("[name='3']").val(name3);
-			}else{
-				name4 = json[i].name
-				$("[name='4']").val(name4);
-			}
-		}
-});
+
 
 //checks if color has already been chosen, and if not adds to player's array.    
 $(document).on("click", "#color_btn", function(e) {
@@ -261,47 +252,6 @@ $(document).on("click", "#color_btn", function(e) {
 	localStorage["addOnDB"] = JSON.stringify(json);
     
 	});
-	
-//checks that that names and colors are chosen for each player
-$(document).on("click","#setup_btn", function(e){
-	save_Names();
-	addOn_db = loadDB("addOnDB")
-	var json = JSON.parse(localStorage["addOnDB"]);
-	var total_players = addOn_db.length;
-	for (var i = 0; i<addOn_db.length; i++){
-		if(json[i].name == '' || json[i].color == ''){
-		alert("You have unfilled player data");
-		e.preventDefault();
-		break;
-		}
-	}
-});
 
-//fills the swatches with their colors on page load    
-$(document).ready(function(){
-	addOn_db = loadDB("addOnDB")
-	var json = JSON.parse(localStorage["addOnDB"]);
-	for (var i in json){
-			if(json[i].id == 1){
-				col1 = json[i].color
-				if(col1 != ''){
-				$("#1").css({"border":"none", "height":"36px", "width":"36px", "background": col1})}
-			}else if(json[i].id == 2){
-				col2 = json[i].color
-				if(col2 != ''){
-				$("#2").css({"border":"none", "height":"36px", "width":"36px", "background": col2})}
-			}else if(json[i].id == 3){
-				col3 = json[i].color
-				if(col3 != ''){
-				$("#3").css({"border":"none", "height":"36px", "width":"36px", "background": col3})}
-			}else if(json[i].id == 4){
-				col4 = json[i].color
-				if(col4 != ''){
-				$("#4").css({"border":"none", "height":"36px", "width":"36px", "background": col4})}	
-			}
 
-		}
-		
-		
-});
 

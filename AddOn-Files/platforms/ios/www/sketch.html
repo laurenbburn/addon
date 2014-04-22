@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<title>sketch_1_20 : Built with Processing and Processing.js</title>
+		<meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<title>sketch_3_25 : Built with Processing and Processing.js</title>
 		<link rel="icon"  type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAQAAVzABAEAjBQAaDwYAWjUGAGE6CQBrQQ0ATS8PAFhAJwBUQC8AbFI6AHVXPACBZk4A4NrWAPb19QAAAAAAAMmZmZmZmgAJIwAAAAAAcMIjPjA+PjAKpxIuMDMzMAm0Ii4zMzMACaIiLt3dMAAJtyIuIzPQAAm0Un5yM+IzKLRkfncy4iIotRF+dyLkIiq0QX53F+EiGrQUTkd34iIatEVu7u5iIVrBVVRBRFRVbAtGZGZla2uwAMu7u7u8vADAAwAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIABAADAAwAA" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
 		<meta name="Generator" content="Processing" />
 		<!-- - - - - - - - - - - - - - - - - - - - - 
 		+
@@ -12,7 +16,7 @@
 		+    and: http://processingjs.org/
 		+
 		+ - - - - - - - - - - - - - - - - - - - - -->
-		<style type="text/css">
+		<!-- <style type="text/css">
 	body {
 	  background-color: #333; color: #bbb; line-height: normal;
 	  font-family: Lucida Grande, Lucida Sans, Arial, Helvetica Neue, Verdana, Geneva, sans-serif;
@@ -42,32 +46,93 @@
 		border-right: 1px solid #333; border-bottom: 1px solid #333;
 		background-color: #3d3d3d;
 	}
-		</style>
+		</style> -->
 		<!--[if lt IE 9]>
 			<script type="text/javascript">alert("Your browser does not support the canvas tag.");</script>
 		<![endif]-->
 		<script type="text/javascript" src="js/index.js"></script>
         <script src="js/jquery-2.0.0.min.js"></script>
         <script src="js/jquery.cooki.js"></script>
-		<script src="html2canvas.js" type="text/javascript"></script>
 		<script src="js/database.js" type="text/javascript"></script>
 		<script src="processing.js" type="text/javascript"></script>
 		<script type="text/javascript">
 // convenience function to get the id attribute of generated sketch html element
-function getProcessingSketchId () { return 'sketch120'; }
-var saveNumber = 0;
-function please_save() {
-var can = document.getElementById('sketch120');
-var img = new Image(); img.src = can.toDataURL(); add_Image(img.src);
+function getProcessingSketchId () { return 'sketch325'; }
+
+function getname(name, number){
+	addOn_db = loadDB("addOnDB")
+	var json = JSON.parse(localStorage["addOnDB"]);
+	name = json[number].name;
+	return name;
 }
 
+function getnames(){
+	addOn_db = loadDB("addOnDB")
+	var json = JSON.parse(localStorage["addOnDB"]);
+	var names = new Array();
+	for (var i in json){
+			if(json[i].id == 1){
+				name1 = json[i].name;
+				names.push(name1);
+			}else if(json[i].id == 2){
+				name2 = json[i].name;
+				names.push(name2);
+			}else if(json[i].id == 3){
+				name3 = json[i].name;
+				names.push(name3);
+			}else{
+				name4 = json[i].name;
+				names.push(name4);
+			}
+		}
+		return names;
+}
+function hexToR(h) {return parseInt((cutHex(h)).substring(0,2),16)}
+function hexToG(h) {return parseInt((cutHex(h)).substring(2,4),16)}
+function hexToB(h) {return parseInt((cutHex(h)).substring(4,6),16)}
+function cutHex(h) {return (h.charAt(0)=="#") ? h.substring(1,7):h}
+
+function getcolors(int){
+	addOn_db = loadDB("addOnDB")
+	var json = JSON.parse(localStorage["addOnDB"]);
+	var colors = new Array();
+	for (var i in json){
+			if(json[i].id == 1){
+				col1R = hexToR(json[i].color);
+				col1G = hexToG(json[i].color);
+				col1B = hexToB(json[i].color);
+				colors.push(col1R, col1G, col1B);
+			}else if(json[i].id == 2){
+				col2R = hexToR(json[i].color);
+				col2G = hexToG(json[i].color);
+				col2B = hexToB(json[i].color);
+				colors.push(col2R, col2G, col2B);
+			}else if(json[i].id == 3){
+				col3R = hexToR(json[i].color);
+				col3G = hexToG(json[i].color);
+				col3B = hexToB(json[i].color);
+				colors.push(col3R, col3G, col3B);
+			}else{
+				col4R = hexToR(json[i].color);
+				col4G = hexToG(json[i].color);
+				col4B = hexToB(json[i].color);
+				colors.push(col4R, col4G, col4B);
+			}
+		}
+		return colors;
+}
+
+function please_save() {
+var can = document.getElementById('sketch325');
+var img = new Image(); img.src = can.toDataURL(); add_Image(img.src);
+}
 </script>
 
 	</head>
 	<body>
-		<div id="content">
+		<div class="app">
 			<div>
-				<canvas id="sketch120" data-processing-sources="sketch_1_20.pde" 
+				<canvas id="sketch325" data-processing-sources="sketch_3_25.pde" 
 						width="320" height="568">
 					<p>Your browser does not support the canvas tag.</p>
 					<!-- Note: you can put any alternative content here. -->
@@ -76,13 +141,13 @@ var img = new Image(); img.src = can.toDataURL(); add_Image(img.src);
 					<p>JavaScript is required to view the contents of this page.</p>
 				</noscript>
 	    	</div>
-			<h1>sketch_1_20</h1>
+			<!--<h1>sketch_3_25</h1>
     		<p id="description"></p>
-			<p id="sources">Source code: <a href="sketch_1_20.pde">sketch_1_20</a> </p>
+			<p id="sources">Source code: <a href="sketch_3_25.pde">sketch_3_25</a> </p>
 			<p>
 			Built with <a href="http://processing.org" title="Processing">Processing</a>
 			and <a href="http://processingjs.org" title="Processing.js">Processing.js</a>
-			</p>
+			</p> -->
 		</div>
 	</body>
 </html>

@@ -218,10 +218,11 @@ void draw() {
     transitionScreen();
   }
  if(!blackbg && !drawingScreen && !drawingMode && !gameEnd &&!roundTransition){
-         save("line-####.png");
+         please_save();
          noLoop();
 }
 }
+
 
 void paint_layout() {
   //top bar

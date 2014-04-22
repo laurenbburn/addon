@@ -45,9 +45,9 @@ boolean largeOver = false;
 int sx, sy;
 int mx, my;
 int lx, ly;
-int circS = 8;
-int circM = 18;
-int circL = 35;
+int circS = 6;
+int circM = 16;
+int circL = 36;
 
 color circColor;
 
@@ -61,16 +61,15 @@ String[] roundNum= {
 color bg;
 
 String playerString;
-String[] playerNum = {
-  "evan", "lauren", "bradley", "brian"
-};
+String playerNum = getnames();
+//String[] playerNum; // = {"evan", "lauren", "bradley", "brian"};
 int playerCount;
+int colorCount;
 int totalPlayers;
+int pColor = getcolors();
 int pFill;
 
-int[] pColor = {
-  (#ffaaaa), (#aaffaa), (#aaaaff), (#ffaaff), (#cccccc)
-  };
+//int[] dColor = {#ffaaaa, #aaffaa, #aaaaff, #ffaaff, #cccccc};
 
 //PlayerTags
 
@@ -130,14 +129,16 @@ int[] pColor = {
     buttonPressed = color(55);
 
     //PLAYER AND ROUND
-    pFill=(pColor[playerCount]);
+    //pFill= color(pColor[playerCount]);
+    pFill = color(pColor[colorCount], pColor[colorCount+1], pColor[colorCount+2]);
 
     playerCount=0;
+    colorCount = 0;
     roundCount=4;
     R1 = "Round "+roundCount;
     playerString = playerNum[playerCount]+"'s Turn!";
 
-    totalPlayers = 4;
+    totalPlayers = playerNum.length;
     
     //PlayerTags
     
@@ -220,6 +221,8 @@ void draw() {
  if(!blackbg && !drawingScreen && !drawingMode && !gameEnd &&!roundTransition){
          please_save();
          noLoop();
+         window.onClick = window.location="gallery.html";
+
 }
 }
 
@@ -327,7 +330,7 @@ void mouseDragged() {
   if (drawingScreen && !(blackbg)) {
     drawingMode = true;
     buttonFillM = color(55);
-    W = circM;
+    W = circS;
     //  drawing.fill(pFill);
     //  drawing.ellipse(mouseX,mouseY,W);
     if ((medium==true)) {
@@ -429,9 +432,12 @@ void transitionScreen() {
 void roundPlayerCount() {
   if (playerCount<(totalPlayers)) {
     playerCount++;
+    colorCount+=3;
     if (playerCount<totalPlayers){
+      print(playerNum[1]);
+      print(pColor[1]);
     playerString = playerNum[playerCount]+"'s Turn!"; ///
-    pFill=(pColor[playerCount]);
+    pFill=color(pColor[colorCount], pColor[colorCount+1], pColor[colorCount+2]);
     noLoop();
   }
   if (playerCount>=totalPlayers) {
@@ -441,7 +447,7 @@ void roundPlayerCount() {
       R1 = "Round "+roundCount;
       playerCount=0;
       playerString = playerNum[playerCount]+"'s Turn!";
-      pFill=(pColor[playerCount]);
+      pFill=color(pColor[colorCount], pColor[colorCount+1], pColor[colorCount+2]);
       noLoop();
       }
     }
@@ -501,11 +507,11 @@ void playerTags() {
   textFont(myFontBlack);
   
   // Player 1
-  fill(pColor[0]);
+  fill(pColor[0], pColor[1], pColor[2]);
   text(p1, p1x, py);
   
   //Player 2
-  fill(pColor[1]);
+  fill(pColor[3], pColor[4], pColor[5]);
   text(p2, p2x, py);  
   
   
@@ -519,7 +525,7 @@ void playerTags() {
 
     //checks to see if the text width is less than screen width
     if ((p3W+p3x)<(width-20)){ 
-      fill(pColor[2]);
+      fill(pColor[6], pColor[7], pColor[8]);
       text(p3, p3x, py);
     }
     
@@ -533,15 +539,15 @@ void playerTags() {
       py = 530;
       
       //Player 1    
-      fill(pColor[0]);
+      fill(pColor[0], pColor[1], pColor[2]);
       text(p1, p1x, py);
        
       //Player 2
-      fill(pColor[1]);
+      fill(pColor[3], pColor[4], pColor[5]);
       text(p2, p2x, py); 
       
       //Player 3
-      fill(pColor[2]);
+      fill(pColor[6], pColor[7], pColor[8]);
       text(p3,p3x,py3);
         
     }
@@ -560,11 +566,11 @@ void playerTags() {
     if ((p4W+p4x)<(width-20)){ 
       
       //Player 3
-      fill(pColor[2]);
+      fill(pColor[6], pColor[7], pColor[8]);
       text(p3, p3x, py);  
        
       //Player 4   
-      fill(pColor[3]);
+      fill(pColor[9], pColor[10], pColor[11]);
       text(p4, p4x, py);
      }
      
@@ -582,19 +588,19 @@ void playerTags() {
          py = 530;
           
          //Player 1  
-         fill(pColor[0]);
+         fill(pColor[0], pColor[1], pColor[2]);
          text(p1, p1x, py);
        
          //Player 2
-         fill(pColor[1]);
+         fill(pColor[3], pColor[4], pColor[5]);
          text(p2, p2x, py);
        
          //Player 3
-         fill(pColor[2]);
+         fill(pColor[6], pColor[7], pColor[8]);
          text(p3,p3x,py);
          
          //Player 4
-         fill(pColor[3]);
+         fill(pColor[9], pColor[10], pColor[11]);
          text(p4,p4x,py3); 
         }
          
@@ -609,22 +615,21 @@ void playerTags() {
           py = 530;
           
           //Player 1  
-          fill(pColor[0]);
+          fill(pColor[0], pColor[1], pColor[2]);
           text(p1, p1x, py);
        
           //Player 2
-          fill(pColor[1]);
+          fill(pColor[3], pColor[4], pColor[5]);
           text(p2, p2x, py);
        
           //Player 3
-          fill(pColor[2]);
+          fill(pColor[6], pColor[7], pColor[8]);
           text(p3,p3x,py3);
          
           //Player 4 
-          fill(pColor[3]);
+          fill(pColor[9], pColor[10], pColor[11]);
           text(p4,p4x,py3); 
          }
       }  
    }
 }
-

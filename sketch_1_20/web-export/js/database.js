@@ -2,7 +2,7 @@ var addOn_dB, img_dB, players, name1, name2, name3, name4;
 
 
 addOn_db = loadDB("addOnDB");
-img_db = loadDB("imgDB");
+img_db = loadDB("img_DB");
 
 var i;
 
@@ -31,8 +31,7 @@ function saveDB(name, db){
 function add_Image(img){
 
 	img_db=loadDB("imgDB")
-	img_db.unshift(img);
-	saveDB("imgDB", img_db)
+	img_db.push(img);
 	
 }
 
@@ -73,11 +72,20 @@ function create_Player(){
 		check_Add()
 	}		
 
+//Deletes all players from the database when the back button is pressed.
+function delete_Players(){
+
+	addOn_db = loadDB("addOnDB")
+	//remove database from local storage
+	localStorage.removeItem('addOnDB');
+	//update players
+	updatePlayers()
+}
+
 
 //Run on load
-$(document).ready(function(){
+$(function(){
 	addOn_db = loadDB("addOnDB")
-	img_db = loadDB("imgDB")
 	
 	//Get a reference to the divs to edit
 	players = $("#thePlayers");
@@ -116,7 +124,7 @@ function initial(){
 		name:"",
 		color:""
 	}
-	addOn_db.length = 0;
+	
 	addOn_db.push(newPlayer1)
 	addOn_db.push(newPlayer2)
 	players.append(create_Row(newPlayer1));
@@ -261,21 +269,6 @@ $(document).on("click", "#color_btn", function(e) {
 	localStorage["addOnDB"] = JSON.stringify(json);
     
 	});
-	
-//checks that that names and colors are chosen for each player
-$(document).on("click","#setup_btn", function(e){
-	save_Names();
-	addOn_db = loadDB("addOnDB")
-	var json = JSON.parse(localStorage["addOnDB"]);
-	var total_players = addOn_db.length;
-	for (var i = 0; i<addOn_db.length; i++){
-		if(json[i].name == '' || json[i].color == ''){
-		alert("You have unfilled player data");
-		e.preventDefault();
-		break;
-		}
-	}
-});
 
 //fills the swatches with their colors on page load    
 $(document).ready(function(){
