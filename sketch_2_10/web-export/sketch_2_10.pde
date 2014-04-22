@@ -2,24 +2,25 @@ PFont myFont;
 PFont myFontBlack;
 PGraphics drawing;
 
+boolean mouseDrag;
+boolean mousePress;
+boolean drawingMode = false;
+boolean small, medium, large;
+boolean roundTransition = true;
+boolean drawingScreen = true;
+boolean blackbg = true;
+boolean endScreen=false;
+boolean gameEnd=false;
+
 /*
 boolean drawingMode = false;
  boolean small, medium, large;
- boolean roundTransition = true;
- boolean drawingScreen = true;
- boolean blackbg = true;
+ boolean roundTransition = false;
+ boolean drawingScreen = false;
+ boolean blackbg = false;
  boolean endScreen=false;
- boolean gameEnd=false;
-*/
-
-boolean drawingMode = false;
-boolean small, medium, large;
-boolean roundTransition = false;
-boolean drawingScreen = false;
-boolean blackbg = false;
-boolean endScreen=false;
-boolean gameEnd=true;
-
+ boolean gameEnd=true;
+ */
 
 int W;
 color colorPick;
@@ -62,7 +63,7 @@ color bg;
 
 String playerString;
 String[] playerNum = {
-  "m", "m", "c", "d"
+  "evan", "lauren", "bradley", "brian"
 };
 int playerCount;
 int totalPlayers;
@@ -72,96 +73,104 @@ int[] pColor = {
   (#ffaaaa), (#aaffaa), (#aaaaff), (#ffaaff), (#cccccc)
   };
 
-//PlayerTags
+  //PlayerTags
 
-//Player 1-1
+  //Player 1-1
   String p1;
-  float p1W; 
-  float p1x;
-  float py;
-  float h;
+float p1W; 
+float p1x;
+float py;
+float h;
 //Player 2-1
-  String p2;
-  float p2W;
-  float p2x;
+String p2;
+float p2W;
+float p2x;
 //Player3-1
-    String p3;
-    float p3W;
-    float p3x;
+String p3;
+float p3W;
+float p3x;
 //Player3-2
-    Float py3;
+Float py3;
 //Player4-1;
-    String p4;
-    float p4W;
-    float p4x;
-    
-    float py4;
+String p4;
+float p4W;
+float p4x;
+
+float py4;
 
 
 
 
-  //SETUP
+//SETUP
 
-  void setup() {
+void setup() {
 
-    size(320, 568);
-    background(250);
-    noStroke();
-    smooth();  
-    drawing = createGraphics(width, height);
-    circColor=color(180);
+  size(320, 568);
+  background(250);
+  noStroke();
+  smooth();  
+  drawing = createGraphics(width, height);
+  circColor=color(180);
 
-    //Color
-    colorPick = color(20, 130, 200);
+  //Color
+  colorPick = color(20, 130, 200);
 
-    //Meter
-    meterWidth = 320;
-    decVal = .8;
-    meterColorRed = 55;
+  //Meter
+  meterWidth = 320;
+  decVal = .8;
+  meterColorRed = 55;
 
-    //buttons
-    smallx = 93;
-    y = 535;
-    medx=155;
-    largex = 227;
-    buttonFillS = circColor;
-    buttonFillM = circColor;
-    buttonFillL = circColor;
-    buttonPressed = color(55);
+  //buttons
+  smallx = 93;
+  y = 535;
+  medx=155;
+  largex = 227;
+  buttonFillS = circColor;
+  buttonFillM = circColor;
+  buttonFillL = circColor;
+  buttonPressed = color(55);
 
-    //PLAYER AND ROUND
-    pFill=(pColor[playerCount]);
+  //PLAYER AND ROUND
+  pFill=(pColor[playerCount]);
 
-    playerCount=0;
-    roundCount=4;
-    R1 = "Round "+roundCount;
-    playerString = playerNum[playerCount]+"'s Turn!";
+  playerCount=0;
+  roundCount=4;
+  R1 = "Round "+roundCount;
+  playerString = playerNum[playerCount]+"'s Turn!";
 
-    totalPlayers = 3;
-    
-    //PlayerTags
+  totalPlayers = 4;
 
-//Player 1-1
-    p1 = playerNum[0];
-    p1W = textWidth(p1); 
-    py = 540;
-    h= textAscent();
-//Player 2-1
-    p2 = playerNum[1];
-    p2W = textWidth(p2);
-   // p2x = p1x+p1W+20;
-//Player3-1
-    p3 = playerNum[2];
-    p3W = textWidth(p3);
+  W = circM;
+  //PlayerTags
+
+  myFontBlack=createFont("AvenirLTStd-Black.otf", 16, true);
+  textAlign(LEFT);
+  textFont(myFontBlack);
+
+  //Player 1-1
+  p1 = playerNum[0];
+  p1W = textWidth(p1); 
+  py = 540;
+  h= textAscent();
+  //Player 2-1
+  p2 = playerNum[1];
+  p2W = textWidth(p2);
+  // p2x = p1x+p1W+20;
+  //Player3-1
+  p3 = playerNum[2];
+  p3W = textWidth(p3);
   //  p3x = p2x+p2W+20;
-//Player3-2
-    py3= py+10;
-//Player 4
-    p4 = playerNum[3];
-    p4W = textWidth(p4);
+  //Player3-2
+  py3= py+10;
+  //Player 4
+  p4 = playerNum[3];
+  p4W = textWidth(p4);
   //  p4x = p3x+p3W+20;
-    py4 = py+10;
-  }
+  py4 = py+10;
+
+  p1x= ((width/2)-((p1W+p2W+20)/2));
+  p2x= p1x+p1W+20;
+}
 
 void draw() {
   background(255);
@@ -169,19 +178,18 @@ void draw() {
 
   drawing.beginDraw();
   if (drawingMode) {   
-    //   if (mouseDragged){
+    if (mouseDrag){
     drawing.stroke(pFill);
     drawing.strokeWeight(W);
     drawing.line(mouseX, mouseY, pmouseX, pmouseY);
   }
-
-
-  // }
-  //   if (mousePressed){
-  //     drawing.fill(pFill);
-  //     drawing.ellipse(mouseX, mouseY, W);
-  //   }
-
+    if (mousePress){
+      drawing.fill(pFill);
+      drawing.noStroke();
+      drawing.ellipse(mouseX, mouseY, W, W);
+      mousePress = false;
+    }
+  }
   drawing.endDraw();
   image(drawing, 0, 0);
   playerTags();
@@ -210,11 +218,19 @@ void draw() {
   if (roundTransition) {  
     transitionScreen();
   }
-/*  if(!blackbg && !drawingScreen && !drawingMode && !gameEnd &&!roundTransition){
-         save();
+<<<<<<< HEAD:sketch_2_10/sketch_2_10.pde
+  if (!blackbg && !drawingScreen && !drawingMode && !gameEnd &&!roundTransition) {
+    saveFrame("image/line-####.png");
+    noLoop();
+  }
+=======
+ if(!blackbg && !drawingScreen && !drawingMode && !gameEnd &&!roundTransition){
+         please_save();
          noLoop();
-}*/
 }
+>>>>>>> d09fee7b227398c332659aa6bb8199f1ec5fcc7a:sketch_1_20/web-export/sketch_1_20.pde
+}
+
 
 void paint_layout() {
   //top bar
@@ -260,15 +276,11 @@ void meter() {
 
 
 void mousePressed() {
-  //println("mousePressed()");
   if (drawingScreen&& !(blackbg)) {
-    /*
-      drawingMode = true; 
-     buttonfillM = color(55);
+    
+     drawingMode = true; 
      W = circM;
-     if (drawingMode){
-     drawing.fill(pFill);
-     drawing.ellipse(mouseX, mouseY, W);}
+     mousePress = true;
      //*/
     if ((mouseX > (smallx-(circL/2)) && mouseX < smallx+(circL/2) && mouseY > y-(circL/2) && mouseY < y+(circL/2))) {
       small = true;
@@ -316,6 +328,7 @@ void mousePressed() {
 //void mousePressed(){
 void mouseDragged() {
   // println("mouseDragged()");
+  mouseDrag=true;
   if (drawingScreen && !(blackbg)) {
     drawingMode = true;
     buttonFillM = color(55);
@@ -353,6 +366,7 @@ void mouseDragged() {
 }
 
 void mouseReleased() {
+  mouseDrag = false;
   if (drawingScreen) {
     drawingMode=false;
   }
@@ -380,18 +394,17 @@ void mouseReleased() {
       R1= "Your Masterpiece"; 
       // playerTags();
       loop();
-
     }
   }
 }
 
 /*
 void saveScreen(){
-  if(!blackbg &!drawingMode & !gameEnd &!roundTransition){
-         save();
-}
-  
-}*/
+ if(!blackbg &!drawingMode & !gameEnd &!roundTransition){
+ save();
+ }
+ 
+ }*/
 
 
 void blackScreen() {
@@ -421,27 +434,27 @@ void transitionScreen() {
 void roundPlayerCount() {
   if (playerCount<(totalPlayers)) {
     playerCount++;
-    if (playerCount<totalPlayers){
-    playerString = playerNum[playerCount]+"'s Turn!"; ///
-    pFill=(pColor[playerCount]);
-    noLoop();
-  }
-  if (playerCount>=totalPlayers) {
-    if (roundCount<5) {
-      roundCount++;
-      if(roundCount<=4){
-      R1 = "Round "+roundCount;
-      playerCount=0;
-      playerString = playerNum[playerCount]+"'s Turn!";
+    if (playerCount<totalPlayers) {
+      playerString = playerNum[playerCount]+"'s Turn!"; ///
       pFill=(pColor[playerCount]);
       noLoop();
+    }
+    if (playerCount>=totalPlayers) {
+      if (roundCount<5) {
+        roundCount++;
+        if (roundCount<=4) {
+          R1 = "Round "+roundCount;
+          playerCount=0;
+          playerString = playerNum[playerCount]+"'s Turn!";
+          pFill=(pColor[playerCount]);
+          noLoop();
+        }
       }
     }
   }
-  }
   //if (roundCount>=4 && playerCount>totalPlayers-1) {
-    //println("STOP2");
-   // totalPlayers=5;
+  //println("STOP2");
+  // totalPlayers=5;
   //}
 }
 
@@ -452,7 +465,7 @@ void gameEndScreen() {
   roundTransition=false;
   playerString= "AddOn Complete!";
   pFill=(#34495e);
-  
+
   noStroke();
   blackScreen();
   myFont=createFont("AvenirLTStd-Black.otf", 20, true);  
@@ -486,167 +499,137 @@ void playerTags() {
   //bottom bar
   fill(252);
   rect(0, 501, 320, 67); 
-  
+
   //text info
   myFontBlack=createFont("AvenirLTStd-Black.otf", 16, true);
   textAlign(LEFT);
   textFont(myFontBlack);
-  
-  
-  
-  
+
   // Player 1
-  p1W= textWidth(p1);
-  p2W= textWidth(p2);
-  p3W= textWidth(p3);
-  p4W=textWidth(p4);
   fill(pColor[0]);
-  p1x= ((width/2)-((p1W+p2W+20)/2));
   text(p1, p1x, py);
-  
-  
-   
+
   //Player 2
-
   fill(pColor[1]);
-  p2x= p1x+p1W+20;
-  println(p1W, p1x, p2x);
   text(p2, p2x, py);  
-  
 
-  
-  println(totalPlayers);
-  
-  // If there are more than 2 players
-  
-  if (totalPlayers>=3) {  
-      
-      p1W = textWidth(p1);
-      p2W = textWidth(p2);
-      p3W= textWidth(p3);
-      println(p3W);
-      p4W=textWidth(p4); 
-    
-    
-      //centers the text
-      p1x= ((width/2)-((p1W+p2W+p3W+p4W+20+20+20)/2));
-      p2x = p1x+p1W+20;
-      p3x = p2x+p2W+20;
-      p4x = p3x+p3W+20;
-      
-    
-      
-      if ((p3W+p3x)<(width-20)){ 
-       fill(pColor[2]);
-       text(p3, p3x, py);
-       
-         
-      
-      
-       if (totalPlayers==4){
-       
-       /*fill(pColor[2]);
-       text(p3, p3x, py);*/
 
-       p1x= ((width/2)-((p1W+p2W+p3W+p4W+20+20+20)/2));
-       p2x = p1x+p1W+20;
-       p3x = p2x+p2W+20;           
-       p4x = p3x+p3W+20;
-       
-       if ((p4W+p4x)<(width-20)){ 
-        // p4x = p3x+p3W+20;
-        // p3x = p2x+p2W+20;  
-         fill(pColor[3]);
-         text(p4, p4x, py);
-         }
-         
-       if ((p4W+p4x)>(width-20)){
-         println("test2");      
-         p1x= ((width/2)-((p1W+p2W+p3W+20+20)/2));
-         p2x = p1x+p1W+20;
-         p3x = p2x+p2W+20+20;
-         
-         // Player 1
-         py = 530;
+  // If there are 3 players
+  if (totalPlayers==3) {  
 
-         //Player4
-         //p4x= (width/2)-((p3W+p4W+20)/2);      
-         textAlign(CENTER);
-         fill(pColor[3]);
-         text(p4,(width/2),py3);
-         //loop();
-        }     
-       }
+    //centers the text
+    p1x= ((width/2)-((p1W+p2W+p3W+40)/2));
+    p2x = p1x+p1W+20;
+    p3x = p2x+p2W+20;
+
+    //checks to see if the text width is less than screen width
+    if ((p3W+p3x)<(width-20)) { 
+      fill(pColor[2]);
+      text(p3, p3x, py);
     }
-    
-    if ((p3W+p3x)>(width-20)){    
-      
-      
+
+    //checks to see if the text width is more than screen width  
+    if ((p3W+p3x)>(width-20)) {
+
       p1x= ((width/2)-((p1W+p2W+20)/2));
       p2x = p1x+p1W+20;
-      p3x = ((width/2)-((p3W+p4W+20)/2));
+      p3x = ((width/2)-((p3W)/2));
 
-      
-      // Player 1
       py = 530;
-            
+
+      //Player 1    
       fill(pColor[0]);
       text(p1, p1x, py);
-       
+
       //Player 2
       fill(pColor[1]);
       text(p2, p2x, py); 
-      
-      //if (totalPlayers==3){
-          
+
       //Player 3
-      //textAlign(CENTER);
       fill(pColor[2]);
-      
-      
-      text(p3,p3x,py3);
-    //}
-      
-      if (totalPlayers==4){
-         println("test");
+      text(p3, p3x, py3);
+    }
+  }
 
-                    p3W = textWidth(p3);
-                    p4W=textWidth(p4);
+  //if there are 4 players     
+  if (totalPlayers==4) {
 
-         p3x= ((width/2)-((p3W+p4W+20)/2));
-         p4x= p3x+p3W+20; 
-         fill(pColor[3]);
-         text(p4, p4x, py3); 
-        
+    p1x= ((width/2)-((p1W+p2W+p3W+p4W+60)/2));
+    p2x = p1x+p1W+20;
+    p3x = p2x+p2W+20;
+    p4x = p3x+p3W+20;
+
+
+    //checks if text width is less than screen width   
+    if ((p4W+p4x)<(width-20)) { 
+
+      //Player 3
+      fill(pColor[2]);
+      text(p3, p3x, py);  
+
+      //Player 4   
+      fill(pColor[3]);
+      text(p4, p4x, py);
+    }
+
+    //checks if text width is more than screen width    
+    if ((p4W+p4x)>(width-20)) {
+
+      //checks if first three players are less than screen width
+      if ((p3W+p3x)<(width-20)) {
+
+        p1x= ((width/2)-((p1W+p2W+p3W+40)/2));
+        p2x = p1x+p1W+20;
+        p3x = p2x+p2W+20;
+        p4x = ((width/2)-((p4W)/2));
+
+        py = 530;
+
+        //Player 1  
+        fill(pColor[0]);
+        text(p1, p1x, py);
+
+        //Player 2
+        fill(pColor[1]);
+        text(p2, p2x, py);
+
+        //Player 3
+        fill(pColor[2]);
+        text(p3, p3x, py);
+
+        //Player 4
+        fill(pColor[3]);
+        text(p4, p4x, py3);
+      }
+
+      //checks if first three players are more than screen width
+      if ((p3W+p3x)>(width-20)) {
+
+        p1x= ((width/2)-((p1W+p2W+20)/2));
+        p2x = p1x+p1W+20;
+        p3x = ((width/2)-((p3W+p4W+20)/2));
+        p4x = p3x+p3W+20;
+
+        py = 530;
+
+        //Player 1  
+        fill(pColor[0]);
+        text(p1, p1x, py);
+
+        //Player 2
+        fill(pColor[1]);
+        text(p2, p2x, py);
+
+        //Player 3
+        fill(pColor[2]);
+        text(p3, p3x, py3);
+
+        //Player 4 
+        fill(pColor[3]);
+        text(p4, p4x, py3);
       }
     }
-         
-    }  
-
-
-  
-    /*
-    if (totalPlayers == 4) {
-    //Player 4    
-    String p4 = playerNum[3];
-    float p4W = textWidth(p4);
-
-    float p4x = p3x+p3W+20;
-    float p4y = 540;
-    fill(pColor[3]);
-    text(p4, p4x, p4y);
   }
-   */ 
-
-  
-  
-//Loop();
 }
 
-//void pos1{
-  
-  
-  
-  
-//}
 
