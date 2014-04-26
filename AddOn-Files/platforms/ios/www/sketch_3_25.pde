@@ -2,7 +2,8 @@ PFont myFont;
 PFont myFontBlack;
 PGraphics drawing;
 
-
+boolean mouseDrag;
+boolean mousePress;
 boolean drawingMode = false;
  boolean small, medium, large;
  boolean roundTransition = true;
@@ -45,9 +46,9 @@ boolean largeOver = false;
 int sx, sy;
 int mx, my;
 int lx, ly;
-int circS = 8;
-int circM = 18;
-int circL = 35;
+int circS = 6;
+int circM = 16;
+int circL = 36;
 
 color circColor;
 
@@ -123,7 +124,7 @@ int pFill;
     y = 535;
     medx=155;
     largex = 227;
-    buttonFillS = circColor;
+    buttonFillS = color(55);
     buttonFillM = circColor;
     buttonFillL = circColor;
     buttonPressed = color(55);
@@ -177,10 +178,17 @@ void draw() {
 
   drawing.beginDraw();
   if (drawingMode) {   
-    //   if (mouseDragged){
+    if (mouseDrag){
     drawing.stroke(pFill);
     drawing.strokeWeight(W);
     drawing.line(mouseX, mouseY, pmouseX, pmouseY);
+  }
+    if (mousePress){
+      drawing.fill(pFill);
+      drawing.noStroke();
+      drawing.ellipse(mouseX, mouseY, W, W);
+      mousePress = false;
+    }
   }
 
 
@@ -273,13 +281,14 @@ void meter() {
 void mousePressed() {
   //println("mousePressed()");
   if (drawingScreen&& !(blackbg)) {
-    /*
-      drawingMode = true; 
-     buttonfillM = color(55);
-     W = circM;
-     if (drawingMode){
-     drawing.fill(pFill);
-     drawing.ellipse(mouseX, mouseY, W);}
+   
+     drawingMode = true; 
+     buttonFillS = color(55);
+     W = circS;
+     mousePress = true;
+     //if (drawingMode){
+     //drawing.fill(pFill);
+     //drawing.ellipse(mouseX, mouseY, W);}
      //*/
     if ((mouseX > (smallx-(circL/2)) && mouseX < smallx+(circL/2) && mouseY > y-(circL/2) && mouseY < y+(circL/2))) {
       small = true;
@@ -321,16 +330,25 @@ void mousePressed() {
       small = false;
       medium = false;
     }
+  }if (drawingScreen&& blackbg){
+      W= circS;
+      buttonFillS = color(55);
+      buttonFillM = color(180);
+      buttonFillL = color(180);
+      medium = false;
+      large = false;
+    
   }
 }
 
 //void mousePressed(){
 void mouseDragged() {
   // println("mouseDragged()");
+  mouseDrag=true;
   if (drawingScreen && !(blackbg)) {
     drawingMode = true;
-    buttonFillM = color(55);
-    W = circM;
+    buttonFillS = color(55);
+    W = circS;
     //  drawing.fill(pFill);
     //  drawing.ellipse(mouseX,mouseY,W);
     if ((medium==true)) {
@@ -364,6 +382,7 @@ void mouseDragged() {
 }
 
 void mouseReleased() {
+  mouseDrag = false;
   if (drawingScreen) {
     drawingMode=false;
   }
