@@ -114,7 +114,14 @@ body {
 
 /* Portrait layout */
 .app {
-    background-color:#E6E6E6;   
+    background-color:#fff;   
+    width:320px;
+    margin:0 auto;
+    height:100%;
+}
+
+.app-splash {
+    background-color:#37466A;   
     width:320px;
     margin:0 auto;
     height:100%;
@@ -156,6 +163,15 @@ body {
 	background-color:#e6e6e6;
 }
 
+#header-fixed{
+	background-color:#e6e6e6;
+	position: fixed;
+}
+
+#bump{
+	height: 60px;
+}
+
 
 h1 {
     font-size:24px;
@@ -169,6 +185,9 @@ h1 {
     line-height:62px;
     text-transform:none;
     width:216px;
+    background-color: white;
+    color: #37466A;
+    
 }
 
 /* Links & Icons */
@@ -183,6 +202,7 @@ a {
 	text-transform:lowercase;
 	line-height:58px;
     font-size:22px;
+    color: #37466A;
 }
 
 .icon2{
@@ -202,14 +222,15 @@ a {
 }
 
 /* Buttons */
-.btn_primary {
-	background-color:#B8B8B8;
+.btn_primary_light {
+	background-color: transparent;/*#B8B8B8;*/
 	height:48px;
 	width:224px;
-	border:none;
+	border:3px solid white;
 	font-size:15px;
 	text-transform:uppercase;
 	font-family:Avenir, Helvetica, san-serif;
+	color: white;
 	font-weight:500;
 	margin:0 auto 24px auto;
 	border-radius:6px;
@@ -217,8 +238,28 @@ a {
 	line-height:48px;
 	display:block;
 	text-align:center;
-
 }
+
+.btn_primary_dark {
+	background-color: transparent;/*#B8B8B8;*/
+	height:48px;
+	width:224px;
+	border:3px solid #37466A;
+	font-size:15px;
+	text-transform:uppercase;
+	font-family:Avenir, Helvetica, san-serif;
+	color: #37466A;
+	font-weight:500;
+	margin:0 auto 24px auto;
+	border-radius:6px;
+	text-decoration:none;
+	line-height:48px;
+	display:block;
+	text-align:center;
+}
+
+
+
 
 #main_btn, #setup_btn, #color_btn{
 	position:absolute;
@@ -230,11 +271,17 @@ a {
 }
 
 .add{
-	height:60px;
-	width:100%;
+	height:48px;
+	width:50px;
 	font-family:'Avenir', 'HelveticaNeue', Helvetica, Arial, sans-serif;
     font-size:24px;
     font-weight:bold;
+    border: 1px solid #37466A;
+    border-radius: 6px;
+    margin: 13px auto 0 auto;
+    display: block;
+    color: #37466A;
+    
 }
 
 button{
@@ -245,6 +292,8 @@ button{
 	cursor:pointer;
 }
 
+
+
 /* Add Players form */
 .numbers {
 	font-size:20px;
@@ -252,7 +301,20 @@ button{
 	font-weight:bold;
 	line-height:60px;
 	padding:0 15px 0 18px;
+	color: #37466A;
 }
+
+.numbers-subtract{
+	font-size:20px;
+	font-family:Avenir, Helvetica, san-serif;
+	font-weight:bold;
+	line-height:60px;
+	padding:0 15px 0 18px;
+	color: #37466A;
+	cursor: pointer;
+	border: 1px solid #37466A;
+}
+
 
 #players li {
 	height:60px;
@@ -260,8 +322,9 @@ button{
 
 input[type="text"] {
 	height:36px;
-	border:none;
 	border-radius:6px;
+	border: 1px solid #37466A;
+	background-color: #d5e3f9;
 	width:188px;
 	padding:0px 9px;
 	line-height:19px;
@@ -276,7 +339,7 @@ input[type="text"] {
 	height:32px;
 	width:32px;
 	border-radius:50%;
-	border:2px dashed #999;
+	border:2px dashed #37466A;
 	display:block;
 	float:right;
 	margin-top:12px;
@@ -301,7 +364,10 @@ display:none;
 }
 
 input[type="radio"]:checked + span.colorButton {
-	border:2px solid black;
+ 	-webkit-box-shadow: 0px 0px 0px 5px #A6ADBF;
+	-moz-box-shadow: 0px 0px 0px 5px #A6ADBF;
+
+	border: 2px solid #37466A;
 	border-radius:50%;
 	width:38px;
 	height:38px;
@@ -318,7 +384,7 @@ input[type="radio"] + span {
 .colorButton {
 	width:42px;
 	height:42px;
-	color:#444;
+	color:#37466A;
 }
 
 #purple{
@@ -394,6 +460,8 @@ bottom:0px;
 div.nomargin{
 	margin-right:0px;
 }
+
+
 
 .pic{
 	float:left;

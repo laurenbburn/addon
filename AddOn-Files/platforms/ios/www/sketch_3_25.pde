@@ -109,7 +109,7 @@ int pFill;
     noStroke();
     smooth();  
     drawing = createGraphics(width, height);
-    circColor=color(180);
+    circColor=color(166,173,191);
 
     //Color
     colorPick = color(20, 130, 200);
@@ -124,7 +124,7 @@ int pFill;
     y = 535;
     medx=155;
     largex = 227;
-    buttonFillS = color(55);
+    buttonFillS = color(55,70,109);
     buttonFillM = circColor;
     buttonFillL = circColor;
     buttonPressed = color(55);
@@ -135,7 +135,7 @@ int pFill;
 
     playerCount=0;
     colorCount = 0;
-    roundCount=4;
+    roundCount=1;
     R1 = "Round "+roundCount;
     playerString = playerNum[playerCount]+"'s Turn!";
 
@@ -238,15 +238,15 @@ void draw() {
 void paint_layout() {
   //top bar
   noStroke();
-  fill(230);
+  fill(215,218,226);
   rect(0, 0, 320, 68);
   myFont=createFont("Avenir", 24, true);  
   textFont(myFont);
-  fill(55);
+  fill(55,70,109);
   textAlign(CENTER);
   text(R1, width/2, 42);
   //bottom bar
-  fill(230);
+  fill(215,218,226);
   rect(0, 501, 320, 67);
   //buttons
   fill(buttonFillS);
@@ -259,9 +259,9 @@ void paint_layout() {
 }
 
 void meter() {
-  fill(175);
+  fill(166,173,191);
   rect(0, 61, width, 7);
-  meterColor = color(meterColorRed, 55, 55);
+  meterColor = color(meterColorRed, 20, 109);
   fill(meterColor);
   rect(0, 61, meterWidth, 7);
   if (mousePressed) {
@@ -308,33 +308,33 @@ void mousePressed() {
 
     if ((medium==true)) {
       W = circM; 
-      buttonFillM = color(55);
-      buttonFillS = color(180);
-      buttonFillL = color(180);
+      buttonFillM = color(55,70,109);
+      buttonFillS = color(166,173,191);
+      buttonFillL = color(166,173,191);
       small = false;
       large = false;
     }
     if ((small==true)) {
       W= circS;
-      buttonFillS = color(55);
-      buttonFillM = color(180);
-      buttonFillL = color(180);
+      buttonFillS = color(55,70,109);
+      buttonFillM = color(166,173,191);
+      buttonFillL = color(166,173,191);
       medium = false;
       large = false;
     }
     if ((large == true)) {
       W = circL; 
-      buttonFillL = color(55);
-      buttonFillM = color(180);
-      buttonFillS = color(180);
+      buttonFillL = color(55,70,109);
+      buttonFillM = color(166,173,191);
+      buttonFillS = color(166,173,191);
       small = false;
       medium = false;
     }
   }if (drawingScreen&& blackbg){
       W= circS;
-      buttonFillS = color(55);
-      buttonFillM = color(180);
-      buttonFillL = color(180);
+      buttonFillS = color(55,70,109);
+      buttonFillM = color(166,173,191);
+      buttonFillL = color(166,173,191);
       medium = false;
       large = false;
     
@@ -428,7 +428,7 @@ void blackScreen() {
   meterStart=false;
   drawingMode = false;
   noStroke();
-  fill(0, 210);
+  fill(55,70,107,240);
   rect(0, 0, width, height);
 }
 
@@ -494,7 +494,10 @@ void gameEndScreen() {
   textSize(24);
   textAlign(CENTER);
   text(playerString, width/2, 200);
-  fill(pFill);
+  //fill(pFill);
+  stroke(#ffffff);
+  strokeWeight(3);
+  noFill();
   rect(width/4, height*.45, width/2, height*.1, 6);
   fill(#ffffff);
   textSize(15);
@@ -508,16 +511,16 @@ void gameEndScreen() {
 void playerTags() {
   //top bar
   noStroke();
-  fill(230);
+  fill(215,218,226);
   rect(0, 0, 320, 68);
   myFont=createFont("Avenir", 20, true);
   textFont(myFont);
-  fill(55);
+  fill(55,79,109);
   textAlign(CENTER);
   text(R1, width/2, 42);
-  stroke(230);
+  noStroke();
   //bottom bar
-  fill(252);
+  fill(235,238,246);
   rect(0, 501, 320, 67); 
   
   //text info
@@ -652,4 +655,5 @@ void playerTags() {
       }  
    }
 }
+
 

@@ -1,0 +1,670 @@
+THelloWorld
+v6
+r1
+cCheck dependencies
+cProcessInfoPlistFile /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Info.plist /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/HelloWorld-Info.plist
+cPhaseScriptExecution Copy\ www\ directory /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Script-304B58A110DAC018002A0835.sh
+cCpResource HelloWorld/config.xml build/emulator/HelloWorld.app/config.xml
+cCpResource HelloWorld/Resources/icons/icon.png build/emulator/HelloWorld.app/icon.png
+cCpResource HelloWorld/Resources/icons/icon-72.png build/emulator/HelloWorld.app/icon-72.png
+cCpResource HelloWorld/Resources/icons/icon@2x.png build/emulator/HelloWorld.app/icon@2x.png
+cCopyStringsFile /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/en.lproj/Localizable.strings HelloWorld/Resources/en.lproj/Localizable.strings
+cCopyStringsFile /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/es.lproj/Localizable.strings HelloWorld/Resources/es.lproj/Localizable.strings
+cCompileXIB /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.xib
+cCopyStringsFile /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/de.lproj/Localizable.strings HelloWorld/Resources/de.lproj/Localizable.strings
+cCopyStringsFile /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/se.lproj/Localizable.strings HelloWorld/Resources/se.lproj/Localizable.strings
+cCpResource HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/HelloWorld.app/Default-Landscape@2x~ipad.png
+cCpResource HelloWorld/Resources/splash/Default-Landscape~ipad.png build/emulator/HelloWorld.app/Default-Landscape~ipad.png
+cCpResource HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/HelloWorld.app/Default-Portrait@2x~ipad.png
+cCpResource HelloWorld/Resources/splash/Default-Portrait~ipad.png build/emulator/HelloWorld.app/Default-Portrait~ipad.png
+cCpResource HelloWorld/Resources/splash/Default@2x~iphone.png build/emulator/HelloWorld.app/Default@2x~iphone.png
+cCpResource HelloWorld/Resources/splash/Default~iphone.png build/emulator/HelloWorld.app/Default~iphone.png
+cCpResource HelloWorld/Resources/splash/Default-568h@2x~iphone.png build/emulator/HelloWorld.app/Default-568h@2x~iphone.png
+cCpResource HelloWorld/Resources/icons/icon-72@2x.png build/emulator/HelloWorld.app/icon-72@2x.png
+cProcessPCH /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-bcnpinnxnlwryiaaxnuaepcxvfys/HelloWorld-Prefix.pch.pch HelloWorld/HelloWorld-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/AppDelegate.o /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/MainViewController.o /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/main.o /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/HelloWorld normal i386
+cGenerateDSYMFile /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app.dSYM /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/HelloWorld
+cTouch /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
+c00000000525642F10000000000000176
+t1381384945
+s374
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
+c0000000052815DC900000000000003B5
+t1384209865
+s949
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000052815DD700000000000001A0
+t1384209879
+s416
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+c0000000052815DD80000000000059350
+t1384209880
+s365392
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c0000000052815DDA0000000000445870
+t1384209882
+s4479088
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+c0000000052815DDB00000000000EC820
+t1384209883
+s968736
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c0000000052815DE000000000001BA530
+t1384209888
+s1811760
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/AppDelegate.m
+c00000000528169CD00000000000013AB
+t1384212941
+s5035
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.m
+c00000000528169CD000000000000126B
+t1384212941
+s4715
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.xib
+c00000000528169CD0000000000001759
+t1384212941
+s5977
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/HelloWorld-Info.plist
+c0000000052816A500000000000000746
+t1384213072
+s1862
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/HelloWorld-Prefix.pch
+c00000000528169CD00000000000003C5
+t1384212941
+s965
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/de.lproj/Localizable.strings
+c00000000528169CD00000000000004BF
+t1384212941
+s1215
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/en.lproj/Localizable.strings
+c00000000528169CD00000000000004AA
+t1384212941
+s1194
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/es.lproj/Localizable.strings
+c00000000528169CD00000000000004B7
+t1384212941
+s1207
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/icons/icon-72.png
+c00000000528169CD0000000000001350
+t1384212941
+s4944
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/icons/icon-72@2x.png
+c00000000528169CD0000000000002DBA
+t1384212941
+s11706
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/icons/icon.png
+c00000000528169CD0000000000000F3E
+t1384212941
+s3902
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/icons/icon@2x.png
+c00000000528169CD0000000000001EBD
+t1384212941
+s7869
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/se.lproj/Localizable.strings
+c00000000528169CD00000000000004AB
+t1384212941
+s1195
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default-568h@2x~iphone.png
+c00000000528169CD00000000000085B1
+t1384212941
+s34225
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png
+c00000000528169CD0000000000012DF4
+t1384212941
+s77300
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default-Landscape~ipad.png
+c00000000528169CD0000000000008877
+t1384212941
+s34935
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png
+c00000000528169CD0000000000012B02
+t1384212941
+s76546
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default-Portrait~ipad.png
+c00000000528169CD00000000000085E6
+t1384212941
+s34278
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default@2x~iphone.png
+c00000000528169CD0000000000007323
+t1384212941
+s29475
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default~iphone.png
+c00000000528169CD000000000000289A
+t1384212941
+s10394
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/config.xml
+c0000000052816A5000000000000008A3
+t1384213072
+s2211
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/main.m
+c00000000528169CD000000000000045C
+t1384212941
+s1116
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/AppDelegate.o
+t1384213122
+s77792
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/HelloWorld.LinkFileList
+c0000000052816A80000000000000025E
+t1384213120
+s606
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/MainViewController.o
+t1384213122
+s53752
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/main.o
+t1384213122
+s3252
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Script-304B58A110DAC018002A0835.sh
+c0000000052816A80000000000000002D
+t1384213120
+s45
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app
+t1384213124
+s748
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app.dSYM
+t2
+s0
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default-568h@2x~iphone.png
+t1384213121
+s34225
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default-Landscape@2x~ipad.png
+t1384213121
+s77300
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default-Landscape~ipad.png
+t1384213121
+s34935
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default-Portrait@2x~ipad.png
+t1384213121
+s76546
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default-Portrait~ipad.png
+t1384213121
+s34278
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default@2x~iphone.png
+t1384213121
+s29475
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default~iphone.png
+t1384213121
+s10394
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/HelloWorld
+t1384213124
+s301284
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Info.plist
+t1384213120
+s1079
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/MainViewController.nib
+t1384213121
+s1332
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/PkgInfo
+t2
+s0
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/config.xml
+t1384213121
+s2211
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/de.lproj/Localizable.strings
+t1384213121
+s280
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/en.lproj/Localizable.strings
+t1384213121
+s166
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/es.lproj/Localizable.strings
+t1384213121
+s334
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/icon-72.png
+t1384213121
+s4944
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/icon-72@2x.png
+t1384213121
+s11706
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/icon.png
+t1384213121
+s3902
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/icon@2x.png
+t1384213121
+s7869
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/se.lproj/Localizable.strings
+t1384213121
+s283
+
+N/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/libCordova.a
+c0000000052816A8000000000000DEEC8
+t1384213120
+s913096
+
+N/var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-bcnpinnxnlwryiaaxnuaepcxvfys/HelloWorld-Prefix.pch.pch
+t1384213122
+s5343804
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies7e8ba200a231b841^f1b7ad00a231b841^---0#1#1#--18"Check dependencies36"23C6B2E4-A15E-48BB-9CD9-46EB614ACC51-
+
+CCompileC build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/AppDelegate.o /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405905922.124915
+e405905922.366016
+r1
+xCompileC
+xbuild/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/AppDelegate.o
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/AppDelegate.m
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/AppDelegate.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection146"Compile /Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/AppDelegate.m205"CompileC build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/AppDelegate.o HelloWorld/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera9132002a231b841^0bb65d02a231b841^---0#0#1#-19%DVTDocumentLocation2@160"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/HelloWorld/Classes/AppDelegate.m0000000000000000^4686"CompileC build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/AppDelegate.o HelloWorld/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-generated-files.hmap -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-own-target-headers.hmap -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-all-target-headers.hmap -iquote /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-project-headers.hmap -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/include -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/usr/local/lib/include -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/UninstalledProducts/include -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/DerivedSources/i386 -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/DerivedSources -F/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator -include /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-bcnpinnxnlwryiaaxnuaepcxvfys/HelloWorld-Prefix.pch -MMD -MT dependencies -MF /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/AppDelegate.dia -c /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Classes/AppDelegate.m -o /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/AppDelegate.o36"218BF1BF-9114-478B-88B3-E9FA82667B9A-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCompileC build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/MainViewController.o /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405905922.124920
+e405905922.366060
+r1
+xCompileC
+xbuild/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/MainViewController.o
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.m
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection153"Compile /Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.m219"CompileC build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/MainViewController.o HelloWorld/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera9132002a231b841^59bf5d02a231b841^---0#0#1#-19%DVTDocumentLocation2@167"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.m0000000000000000^4728"CompileC build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/MainViewController.o HelloWorld/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-generated-files.hmap -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-own-target-headers.hmap -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-all-target-headers.hmap -iquote /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-project-headers.hmap -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/include -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/usr/local/lib/include -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/UninstalledProducts/include -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/DerivedSources/i386 -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/DerivedSources -F/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator -include /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-bcnpinnxnlwryiaaxnuaepcxvfys/HelloWorld-Prefix.pch -MMD -MT dependencies -MF /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/MainViewController.d --serialize-diagnostics /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/MainViewController.dia -c /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.m -o /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/MainViewController.o36"A20C3921-5476-4DC3-8E8B-B13591F0BD58-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCompileC build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/main.o /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405905922.124928
+e405905922.152659
+r1
+xCompileC
+xbuild/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/main.o
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/main.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection131"Compile /Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/main.m183"CompileC build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/main.o HelloWorld/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerdb132002a231b841^db142702a231b841^---0#0#1#-19%DVTDocumentLocation2@145"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/HelloWorld/main.m0000000000000000^4628"CompileC build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/main.o HelloWorld/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-generated-files.hmap -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-own-target-headers.hmap -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-all-target-headers.hmap -iquote /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-project-headers.hmap -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/include -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/usr/local/lib/include -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/UninstalledProducts/include -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/DerivedSources/i386 -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/DerivedSources -F/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator -include /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-bcnpinnxnlwryiaaxnuaepcxvfys/HelloWorld-Prefix.pch -MMD -MT dependencies -MF /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/main.dia -c /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/main.m -o /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/main.o36"D5F47EB0-2518-4296-A8BD-9010FD509348-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCompileXIB /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.xib
+s405905921.110828
+e405905921.190843
+r1
+xCompileXIB
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.xib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection157"Compiling /Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.xib52"CompileXIB HelloWorld/Classes/MainViewController.xib06821c01a231b841^f0db3001a231b841^---0#0#1#-19%DVTDocumentLocation2@169"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.xib0000000000000000^996"CompileXIB HelloWorld/Classes/MainViewController.xib    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.0 --output-format human-readable-text --compile /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/MainViewController.nib /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Classes/MainViewController.xib36"88A7608A-50CB-4DFB-A4A4-08803A719488-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCopyStringsFile /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/de.lproj/Localizable.strings HelloWorld/Resources/de.lproj/Localizable.strings
+s405905921.111509
+e405905921.126086
+r1
+xCopyStringsFile
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/de.lproj/Localizable.strings
+xHelloWorld/Resources/de.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy HelloWorld/Resources/de.lproj/Localizable.strings124"CopyStringsFile build/emulator/HelloWorld.app/de.lproj/Localizable.strings HelloWorld/Resources/de.lproj/Localizable.strings899a1c01a231b841^b2472001a231b841^---0#0#1#-19%DVTDocumentLocation2@177"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/HelloWorld/Resources/de.lproj/Localizable.strings0000000000000000^741"CopyStringsFile build/emulator/HelloWorld.app/de.lproj/Localizable.strings HelloWorld/Resources/de.lproj/Localizable.strings    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/de.lproj -- HelloWorld/Resources/de.lproj/Localizable.strings36"64534C6D-F80B-48B2-96AB-4B2184D66877-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCopyStringsFile /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/en.lproj/Localizable.strings HelloWorld/Resources/en.lproj/Localizable.strings
+s405905921.110573
+e405905921.124320
+r1
+xCopyStringsFile
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/en.lproj/Localizable.strings
+xHelloWorld/Resources/en.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy HelloWorld/Resources/en.lproj/Localizable.strings124"CopyStringsFile build/emulator/HelloWorld.app/en.lproj/Localizable.strings HelloWorld/Resources/en.lproj/Localizable.stringsb8741c01a231b841^17d41f01a231b841^---0#0#1#-19%DVTDocumentLocation2@177"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/HelloWorld/Resources/en.lproj/Localizable.strings0000000000000000^741"CopyStringsFile build/emulator/HelloWorld.app/en.lproj/Localizable.strings HelloWorld/Resources/en.lproj/Localizable.strings    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/en.lproj -- HelloWorld/Resources/en.lproj/Localizable.strings36"494C9DC5-1C53-439D-8C08-C27DB6B3BE19-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCopyStringsFile /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/es.lproj/Localizable.strings HelloWorld/Resources/es.lproj/Localizable.strings
+s405905921.110600
+e405905921.124748
+r1
+xCopyStringsFile
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/es.lproj/Localizable.strings
+xHelloWorld/Resources/es.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy HelloWorld/Resources/es.lproj/Localizable.strings124"CopyStringsFile build/emulator/HelloWorld.app/es.lproj/Localizable.strings HelloWorld/Resources/es.lproj/Localizable.stringsd2721c01a231b841^bbf01f01a231b841^---0#0#1#-19%DVTDocumentLocation2@177"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/HelloWorld/Resources/es.lproj/Localizable.strings0000000000000000^741"CopyStringsFile build/emulator/HelloWorld.app/es.lproj/Localizable.strings HelloWorld/Resources/es.lproj/Localizable.strings    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/es.lproj -- HelloWorld/Resources/es.lproj/Localizable.strings36"99BFBA7B-67E6-497E-BC06-C94E34A2D463-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCopyStringsFile /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/se.lproj/Localizable.strings HelloWorld/Resources/se.lproj/Localizable.strings
+s405905921.115224
+e405905921.128179
+r1
+xCopyStringsFile
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/se.lproj/Localizable.strings
+xHelloWorld/Resources/se.lproj/Localizable.strings
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy HelloWorld/Resources/se.lproj/Localizable.strings124"CopyStringsFile build/emulator/HelloWorld.app/se.lproj/Localizable.strings HelloWorld/Resources/se.lproj/Localizable.strings43921d01a231b841^ddd02001a231b841^---0#0#1#-19%DVTDocumentLocation2@177"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/HelloWorld/Resources/se.lproj/Localizable.strings0000000000000000^741"CopyStringsFile build/emulator/HelloWorld.app/se.lproj/Localizable.strings HelloWorld/Resources/se.lproj/Localizable.strings    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/se.lproj -- HelloWorld/Resources/se.lproj/Localizable.strings36"7F0240C7-622F-470E-91B6-4189D030EB05-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCpResource HelloWorld/Resources/icons/icon-72.png build/emulator/HelloWorld.app/icon-72.png
+s405905921.110523
+e405905921.114011
+r1
+xCpResource
+xHelloWorld/Resources/icons/icon-72.png
+xbuild/emulator/HelloWorld.app/icon-72.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy build/emulator/HelloWorld.app/icon-72.png91"CpResource HelloWorld/Resources/icons/icon-72.png build/emulator/HelloWorld.app/icon-72.png5d6e1c01a231b841^06301d01a231b841^---0#0#1#-19%DVTDocumentLocation2@169"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/icon-72.png0038ccfddeffdf42^816"CpResource HelloWorld/Resources/icons/icon-72.png build/emulator/HelloWorld.app/icon-72.png    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Resources/icons/icon-72.png /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app36"D558ABF6-7E6F-40B2-839C-9B271FED6B7B-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCpResource HelloWorld/Resources/icons/icon-72@2x.png build/emulator/HelloWorld.app/icon-72@2x.png
+s405905921.126989
+e405905921.131683
+r1
+xCpResource
+xHelloWorld/Resources/icons/icon-72@2x.png
+xbuild/emulator/HelloWorld.app/icon-72@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection49"Copy build/emulator/HelloWorld.app/icon-72@2x.png97"CpResource HelloWorld/Resources/icons/icon-72@2x.png build/emulator/HelloWorld.app/icon-72@2x.pngf2952001a231b841^91b62101a231b841^---0#0#1#-19%DVTDocumentLocation2@172"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/icon-72@2x.png0038ccfddeffdf42^825"CpResource HelloWorld/Resources/icons/icon-72@2x.png build/emulator/HelloWorld.app/icon-72@2x.png    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Resources/icons/icon-72@2x.png /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app36"3D6366B3-7B13-48AA-8E31-34CDF3BADB8E-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCpResource HelloWorld/Resources/icons/icon.png build/emulator/HelloWorld.app/icon.png
+s405905921.110502
+e405905921.116229
+r1
+xCpResource
+xHelloWorld/Resources/icons/icon.png
+xbuild/emulator/HelloWorld.app/icon.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Copy build/emulator/HelloWorld.app/icon.png85"CpResource HelloWorld/Resources/icons/icon.png build/emulator/HelloWorld.app/icon.pngc16e1c01a231b841^b5c11d01a231b841^---0#0#1#-19%DVTDocumentLocation2@166"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/icon.png0038ccfddeffdf42^807"CpResource HelloWorld/Resources/icons/icon.png build/emulator/HelloWorld.app/icon.png    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Resources/icons/icon.png /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app36"98AC4B3E-6B5B-4F76-A870-34309CE9F605-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCpResource HelloWorld/Resources/icons/icon@2x.png build/emulator/HelloWorld.app/icon@2x.png
+s405905921.110522
+e405905921.115322
+r1
+xCpResource
+xHelloWorld/Resources/icons/icon@2x.png
+xbuild/emulator/HelloWorld.app/icon@2x.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection46"Copy build/emulator/HelloWorld.app/icon@2x.png91"CpResource HelloWorld/Resources/icons/icon@2x.png build/emulator/HelloWorld.app/icon@2x.png696f1c01a231b841^98861d01a231b841^---0#0#1#-19%DVTDocumentLocation2@169"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/icon@2x.png0038ccfddeffdf42^816"CpResource HelloWorld/Resources/icons/icon@2x.png build/emulator/HelloWorld.app/icon@2x.png    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Resources/icons/icon@2x.png /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app36"1C6143AD-90EA-4C38-8868-392E9EEB425E-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCpResource HelloWorld/Resources/splash/Default-568h@2x~iphone.png build/emulator/HelloWorld.app/Default-568h@2x~iphone.png
+s405905921.126970
+e405905921.132793
+r1
+xCpResource
+xHelloWorld/Resources/splash/Default-568h@2x~iphone.png
+xbuild/emulator/HelloWorld.app/Default-568h@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/emulator/HelloWorld.app/Default-568h@2x~iphone.png122"CpResource HelloWorld/Resources/splash/Default-568h@2x~iphone.png build/emulator/HelloWorld.app/Default-568h@2x~iphone.png9e952001a231b841^bd012201a231b841^---0#0#1#-19%DVTDocumentLocation2@184"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default-568h@2x~iphone.png0038ccfddeffdf42^863"CpResource HelloWorld/Resources/splash/Default-568h@2x~iphone.png build/emulator/HelloWorld.app/Default-568h@2x~iphone.png    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default-568h@2x~iphone.png /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app36"D2246056-B5F1-45A0-8F01-69803009CCD1-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCpResource HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/HelloWorld.app/Default-Landscape@2x~ipad.png
+s405905921.116498
+e405905921.125594
+r1
+xCpResource
+xHelloWorld/Resources/splash/Default-Landscape@2x~ipad.png
+xbuild/emulator/HelloWorld.app/Default-Landscape@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Copy build/emulator/HelloWorld.app/Default-Landscape@2x~ipad.png128"CpResource HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/HelloWorld.app/Default-Landscape@2x~ipad.pnga4e01d01a231b841^fa272001a231b841^---0#0#1#-19%DVTDocumentLocation2@187"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default-Landscape@2x~ipad.png0038ccfddeffdf42^872"CpResource HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/HelloWorld.app/Default-Landscape@2x~ipad.png    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default-Landscape@2x~ipad.png /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app36"52B50110-A47C-4D96-8423-07C2B33D120C-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCpResource HelloWorld/Resources/splash/Default-Landscape~ipad.png build/emulator/HelloWorld.app/Default-Landscape~ipad.png
+s405905921.116663
+e405905921.126179
+r1
+xCpResource
+xHelloWorld/Resources/splash/Default-Landscape~ipad.png
+xbuild/emulator/HelloWorld.app/Default-Landscape~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection61"Copy build/emulator/HelloWorld.app/Default-Landscape~ipad.png122"CpResource HelloWorld/Resources/splash/Default-Landscape~ipad.png build/emulator/HelloWorld.app/Default-Landscape~ipad.pngb7eb1d01a231b841^11552001a231b841^---0#0#1#-19%DVTDocumentLocation2@184"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default-Landscape~ipad.png0038ccfddeffdf42^863"CpResource HelloWorld/Resources/splash/Default-Landscape~ipad.png build/emulator/HelloWorld.app/Default-Landscape~ipad.png    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default-Landscape~ipad.png /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app36"3F6D8064-04B1-4851-A7FD-AAFD4E260230-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCpResource HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/HelloWorld.app/Default-Portrait@2x~ipad.png
+s405905921.121963
+e405905921.127373
+r1
+xCpResource
+xHelloWorld/Resources/splash/Default-Portrait@2x~ipad.png
+xbuild/emulator/HelloWorld.app/Default-Portrait@2x~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy build/emulator/HelloWorld.app/Default-Portrait@2x~ipad.png126"CpResource HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/HelloWorld.app/Default-Portrait@2x~ipad.pnge84f1f01a231b841^8c9d2001a231b841^---0#0#1#-19%DVTDocumentLocation2@186"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default-Portrait@2x~ipad.png0038ccfddeffdf42^869"CpResource HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/HelloWorld.app/Default-Portrait@2x~ipad.png    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default-Portrait@2x~ipad.png /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app36"9807E6B9-3D73-49AF-9000-D17CCB3C0FA2-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCpResource HelloWorld/Resources/splash/Default-Portrait~ipad.png build/emulator/HelloWorld.app/Default-Portrait~ipad.png
+s405905921.125587
+e405905921.128673
+r1
+xCpResource
+xHelloWorld/Resources/splash/Default-Portrait~ipad.png
+xbuild/emulator/HelloWorld.app/Default-Portrait~ipad.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection60"Copy build/emulator/HelloWorld.app/Default-Portrait~ipad.png120"CpResource HelloWorld/Resources/splash/Default-Portrait~ipad.png build/emulator/HelloWorld.app/Default-Portrait~ipad.png963e2001a231b841^5ef12001a231b841^---0#0#1#-19%DVTDocumentLocation2@183"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default-Portrait~ipad.png0038ccfddeffdf42^860"CpResource HelloWorld/Resources/splash/Default-Portrait~ipad.png build/emulator/HelloWorld.app/Default-Portrait~ipad.png    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default-Portrait~ipad.png /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app36"817B59A8-B8FC-4451-A93A-AB31A2DA3288-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCpResource HelloWorld/Resources/splash/Default@2x~iphone.png build/emulator/HelloWorld.app/Default@2x~iphone.png
+s405905921.125839
+e405905921.129530
+r1
+xCpResource
+xHelloWorld/Resources/splash/Default@2x~iphone.png
+xbuild/emulator/HelloWorld.app/Default@2x~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy build/emulator/HelloWorld.app/Default@2x~iphone.png112"CpResource HelloWorld/Resources/splash/Default@2x~iphone.png build/emulator/HelloWorld.app/Default@2x~iphone.png1e4e2001a231b841^56292101a231b841^---0#0#1#-19%DVTDocumentLocation2@179"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default@2x~iphone.png0038ccfddeffdf42^848"CpResource HelloWorld/Resources/splash/Default@2x~iphone.png build/emulator/HelloWorld.app/Default@2x~iphone.png    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default@2x~iphone.png /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app36"867AA48B-4D44-4EEB-97F5-B99C22605723-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCpResource HelloWorld/Resources/splash/Default~iphone.png build/emulator/HelloWorld.app/Default~iphone.png
+s405905921.126824
+e405905921.130606
+r1
+xCpResource
+xHelloWorld/Resources/splash/Default~iphone.png
+xbuild/emulator/HelloWorld.app/Default~iphone.png
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy build/emulator/HelloWorld.app/Default~iphone.png106"CpResource HelloWorld/Resources/splash/Default~iphone.png build/emulator/HelloWorld.app/Default~iphone.png6d8d2001a231b841^93702101a231b841^---0#0#1#-19%DVTDocumentLocation2@176"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Default~iphone.png0038ccfddeffdf42^839"CpResource HelloWorld/Resources/splash/Default~iphone.png build/emulator/HelloWorld.app/Default~iphone.png    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/Resources/splash/Default~iphone.png /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app36"C8B76592-9BE4-4990-993A-35DE12B446E2-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CCpResource HelloWorld/config.xml build/emulator/HelloWorld.app/config.xml
+s405905921.110494
+e405905921.120666
+r1
+xCpResource
+xHelloWorld/config.xml
+xbuild/emulator/HelloWorld.app/config.xml
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Copy build/emulator/HelloWorld.app/config.xml73"CpResource HelloWorld/config.xml build/emulator/HelloWorld.app/config.xmlc1721c01a231b841^4be41e01a231b841^---0#0#1#-19%DVTDocumentLocation2@168"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/config.xml0038ccfddeffdf42^781"CpResource HelloWorld/config.xml build/emulator/HelloWorld.app/config.xml    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/config.xml /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app36"26EF8D78-ACD8-4D49-ABE4-B5FF54728576-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CGenerateDSYMFile /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app.dSYM /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/HelloWorld
+s405905924.034859
+e405905924.076586
+r1
+xGenerateDSYMFile
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app.dSYM
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/HelloWorld
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection149"Generate /Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app.dSYM92"GenerateDSYMFile build/emulator/HelloWorld.app.dSYM build/emulator/HelloWorld.app/HelloWorld3bfd0804a231b841^fe9b1304a231b841^---0#0#1#-19%DVTDocumentLocation2@162"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app.dSYM0038ccfddeffdf42^815"GenerateDSYMFile build/emulator/HelloWorld.app.dSYM build/emulator/HelloWorld.app/HelloWorld    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/HelloWorld -o /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app.dSYM36"E269FFBF-96B7-41F6-A2B2-F68DC1098EFB-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CLd /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/HelloWorld normal i386
+s405905922.401835
+e405905924.026038
+r1
+xLd
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/HelloWorld
+xnormal
+xi386
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/HelloWorld.LinkFileList
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/libCordova.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/crt1.o
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/main.o
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/AppDelegate.o
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/MainViewController.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_iphonesimulator.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libobjc.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/lib/darwin/libclang_rt.ios.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_override.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcache_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcommonCrypto_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcompiler_rt_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libcopyfile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libdyld_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libmacho_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libnotify_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libremovefile_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libunwind_sim.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libxpc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/libsystem_sim_asl.dylib
+d/usr/lib/libSystem.B.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/system/host/libdyld.dylib
+d/usr/lib/system/libcache.dylib
+d/usr/lib/system/libcommonCrypto.dylib
+d/usr/lib/system/libcompiler_rt.dylib
+d/usr/lib/system/libcopyfile.dylib
+d/usr/lib/system/libdnsinfo.dylib
+d/usr/lib/system/libkeymgr.dylib
+d/usr/lib/system/liblaunch.dylib
+d/usr/lib/system/libmacho.dylib
+d/usr/lib/system/libquarantine.dylib
+d/usr/lib/system/libremovefile.dylib
+d/usr/lib/system/libsystem_blocks.dylib
+d/usr/lib/system/libsystem_c.dylib
+d/usr/lib/system/libsystem_dnssd.dylib
+d/usr/lib/system/libsystem_info.dylib
+d/usr/lib/system/libsystem_kernel.dylib
+d/usr/lib/system/libsystem_m.dylib
+d/usr/lib/system/libsystem_notify.dylib
+d/usr/lib/system/libsystem_sandbox.dylib
+d/usr/lib/system/libunc.dylib
+d/usr/lib/system/libunwind.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection151"Link /Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/HelloWorld55"Ld build/emulator/HelloWorld.app/HelloWorld normal i386b6f26602a231b841^15ab0604a231b841^---0#0#1#--2191"Ld build/emulator/HelloWorld.app/HelloWorld normal i386    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator -F/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator -filelist /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/HelloWorld.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/libCordova.a -ObjC -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=5.0 -framework AssetsLibrary /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/libCordova.a -framework CoreGraphics -framework MobileCoreServices -framework CoreLocation -Xlinker -dependency_info -Xlinker /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/HelloWorld_dependency_info.dat -o /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/HelloWorld36"0FC4E38B-64E6-4609-8955-7B181829F841-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CPhaseScriptExecution Copy\ www\ directory /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Script-304B58A110DAC018002A0835.sh
+s405905920.696819
+e405905921.102592
+r1
+xPhaseScriptExecution
+xCopy www directory
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Script-304B58A110DAC018002A0835.sh
+o
+oreal	0m0.383s
+ouser	0m0.077s
+osys	0m0.093s
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'138"PhaseScriptExecution Copy\ www\ directory build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Script-304B58A110DAC018002A0835.shbc1fb300a231b841^5f451a01a231b841^-42"real	0m0.383suser	0m0.077ssys	0m0.093s3(21%IDEActivityLogMessage2@14"real	0m0.383s-405905921#1#14#-0#-----2@14"user	0m0.077s-405905921#15#14#-0#-----2@13"sys	0m0.093s-405905921#29#13#-0#-----0#0#1#--25169"PhaseScriptExecution Copy\ www\ directory build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Script-304B58A110DAC018002A0835.sh    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv ACTION build    setenv AD_HOC_CODE_SIGNING_ALLOWED NO    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER laurenblackburn    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv ALWAYS_USE_SEPARATE_HEADERMAPS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD i386    setenv ARCHS_STANDARD_32_64_BIT i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv ARCHS_STANDARD_INCLUDING_64_BIT "i386 x86_64"    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build"    setenv BUILD_ROOT "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build"    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator"    setenv CACHE_ROOT /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode    setenv CCHROOT /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_ENABLE_OBJC_ARC YES    setenv CLANG_WARN_BOOL_CONVERSION YES    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_EMPTY_BODY YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app"    setenv CODE_SIGNING_ALLOWED NO    setenv CODE_SIGN_CONTEXT_CLASS XCiPhoneSimulatorCodeSignContext    setenv COLOR_DIAGNOSTICS NO    setenv COMBINE_HIDPI_IMAGES NO    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator"    setenv CONFIGURATION_TEMP_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator"    setenv CONTENTS_FOLDER_PATH HelloWorld.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CREATE_INFOPLIST_SECTION_IN_BINARY NO    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEFAULT_KEXT_INSTALL_PATH /System/Library/Extensions    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED /Applications/Xcode.app/Contents/Developer/Library/Frameworks    setenv DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/Developer/Library    setenv DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Tools    setenv DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH HelloWorld.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/HelloWorld.dst    setenv DT_TOOLCHAIN_DIR /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain    setenv DWARF_DSYM_FILE_NAME HelloWorld.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator"    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH HelloWorld.app/Executables    setenv EXECUTABLE_FOLDER_PATH HelloWorld.app    setenv EXECUTABLE_NAME HelloWorld    setenv EXECUTABLE_PATH HelloWorld.app/HelloWorld    setenv FILE_LIST "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH HelloWorld.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME HelloWorld.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD c99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER HelloWorld/HelloWorld-Prefix.pch    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_THUMB_SUPPORT NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES    setenv GCC_WARN_UNDECLARED_SELECTOR YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_FUNCTION YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/include \"/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/usr/local/lib/include\" \"/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/UninstalledProducts/include\" \"/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE HelloWorld/HelloWorld-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH HelloWorld.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH HelloWorld.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/HelloWorld.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER laurenblackburn    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/HelloWorld.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 5.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH HelloWorld.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_DEPENDENCY_INFO_FILE "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/HelloWorld_dependency_info.dat"    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-LinkMap-normal-i386.txt"    setenv LD_NO_PIE NO    setenv LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER YES    setenv LEGACY_DEVELOPER_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_KEXT_INSTALL_PATH /Library/Extensions    setenv LIBRARY_SEARCH_PATHS "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal/i386/HelloWorld.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH HelloWorld.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 12F37    setenv MAC_OS_X_VERSION_ACTUAL 1085    setenv MAC_OS_X_VERSION_MAJOR 1080    setenv MAC_OS_X_VERSION_MINOR 0805    setenv MODULE_CACHE_DIR /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/ModuleCache    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Objects-normal"    setenv OBJROOT "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build"    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load \"/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/libCordova.a\" -ObjC"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode.app/Contents/Developer/Headers /Applications/Xcode.app/Contents/Developer/SDKs /Applications/Xcode.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH HelloWorld.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/PkgInfo"    setenv PKGINFO_PATH HelloWorld.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Applications/Xcode.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr    setenv PLATFORM_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_PRODUCT_BUILD_VERSION 11B508    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 70000    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH HelloWorld.app/PlugIns    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH HelloWorld.app/PrivateHeaders    setenv PRODUCT_NAME HelloWorld    setenv PRODUCT_SETTINGS_PATH "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/HelloWorld-Info.plist"    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT HelloWorld    setenv PROJECT_DERIVED_FILE_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/DerivedSources"    setenv PROJECT_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PROJECT_FILE_PATH "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld.xcodeproj"    setenv PROJECT_NAME HelloWorld    setenv PROJECT_TEMP_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build"    setenv PROJECT_TEMP_ROOT "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build"    setenv PUBLIC_HEADERS_FOLDER_PATH HelloWorld.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator "    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH HelloWorld.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk    setenv SDK_DIR /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk    setenv SDK_NAME iphonesimulator7.0    setenv SDK_PRODUCT_BUILD_VERSION 11B508    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/DerivedSources"    setenv SHARED_FRAMEWORKS_FOLDER_PATH HelloWorld.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH HelloWorld.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv SRCROOT "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build"    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Applications/Xcode.app/Contents/Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Applications/Xcode.app/Contents/Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Applications/Xcode.app/Contents/Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Applications/Xcode.app/Contents/Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Applications/Xcode.app/Contents/Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Applications/Xcode.app/Contents/Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_KEXT_INSTALL_PATH /System/Library/Extensions    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1,2    setenv TARGETNAME HelloWorld    setenv TARGET_BUILD_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator"    setenv TARGET_NAME HelloWorld    setenv TARGET_TEMP_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build"    setenv TEMP_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build"    setenv TEMP_FILES_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build"    setenv TEMP_FILE_DIR "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build"    setenv TEMP_ROOT "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build"    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH HelloWorld.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER laurenblackburn    setenv USER_APPS_DIR /Users/laurenblackburn/Applications    setenv USER_LIBRARY_DIR /Users/laurenblackburn/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS i386    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH HelloWorld.app/version.plist    setenv VERSION_INFO_BUILDER laurenblackburn    setenv VERSION_INFO_FILE HelloWorld_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:HelloWorld  PROJECT:HelloWorld-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME HelloWorld.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Applications/Xcode.app/Contents/Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 5A3005    setenv XCODE_VERSION_ACTUAL 0502    setenv XCODE_VERSION_MAJOR 0500    setenv XCODE_VERSION_MINOR 0500    setenv XPCSERVICES_FOLDER_PATH HelloWorld.app/XPCServices    setenv YACC yacc    setenv arch i386    setenv variant normal    /bin/sh -c \"/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/Script-304B58A110DAC018002A0835.sh\"36"6E15ACB0-E9AD-41CE-B3BB-5124901AD565-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CProcessInfoPlistFile /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Info.plist /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/HelloWorld-Info.plist
+s405905920.680326
+e405905920.687653
+r1
+xProcessInfoPlistFile
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Info.plist
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/HelloWorld-Info.plist
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection146"Process /Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/HelloWorld-Info.plist94"ProcessInfoPlistFile build/emulator/HelloWorld.app/Info.plist HelloWorld/HelloWorld-Info.plistac3bae00a231b841^950cb000a231b841^---0#0#1#-19%DVTDocumentLocation2@160"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/HelloWorld/HelloWorld-Info.plist0000000000000000^965"ProcessInfoPlistFile build/emulator/HelloWorld.app/Info.plist HelloWorld/HelloWorld-Info.plist    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    builtin-infoPlistUtility /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/HelloWorld-Info.plist -genpkginfo /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app/Info.plist36"50CE8EE3-4F8D-4FD5-B59A-28E5595AEDFE-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CProcessPCH /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-bcnpinnxnlwryiaaxnuaepcxvfys/HelloWorld-Prefix.pch.pch HelloWorld/HelloWorld-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s405905921.200845
+e405905922.116503
+r1
+xProcessPCH
+x/var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-bcnpinnxnlwryiaaxnuaepcxvfys/HelloWorld-Prefix.pch.pch
+xHelloWorld/HelloWorld-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/HelloWorld/HelloWorld-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile HelloWorld/HelloWorld-Prefix.pch302"ProcessPCH /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-bcnpinnxnlwryiaaxnuaepcxvfys/HelloWorld-Prefix.pch.pch HelloWorld/HelloWorld-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler17833301a231b841^2cd51d02a231b841^---0#0#1#-19%DVTDocumentLocation2@160"file://localhost/Users/laurenblackburn/Documents/UIUC/Senior%20Year%20(2013-2014)/Independent%20Study/AddOn-Files/platforms/ios/HelloWorld/HelloWorld-Prefix.pch0000000000000000^4548"ProcessPCH /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-bcnpinnxnlwryiaaxnuaepcxvfys/HelloWorld-Prefix.pch.pch HelloWorld/HelloWorld-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=5.0 -iquote /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-generated-files.hmap -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-own-target-headers.hmap -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-all-target-headers.hmap -iquote /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/HelloWorld-project-headers.hmap -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/include -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/usr/local/lib/include -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/UninstalledProducts/include -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/DerivedSources/i386 -I/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/HelloWorld.build/Debug-iphonesimulator/HelloWorld.build/DerivedSources -F/Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator --serialize-diagnostics /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-bcnpinnxnlwryiaaxnuaepcxvfys/HelloWorld-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-bcnpinnxnlwryiaaxnuaepcxvfys/HelloWorld-Prefix.pch.d -c /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/HelloWorld/HelloWorld-Prefix.pch -o /var/folders/ck/z8vcbf_97571dpdgdd5brdpc0000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/HelloWorld-Prefix-bcnpinnxnlwryiaaxnuaepcxvfys/HelloWorld-Prefix.pch.pch36"ACD25771-F5CF-428E-B33A-443B4CA8EBEB-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
+CTouch /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app
+s405905924.085377
+e405905924.118464
+r1
+xTouch
+x/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection141"Touch /Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app35"Touch build/emulator/HelloWorld.appa2ec1504a231b841^0d541e04a231b841^---0#0#1#--522"Touch build/emulator/HelloWorld.app    cd "/Users/laurenblackburn/Documents/UIUC/Senior Year (2013-2014)/Independent Study/AddOn-Files/platforms/ios"    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"    /usr/bin/touch -c /Users/laurenblackburn/Documents/UIUC/Senior\ Year\ (2013-2014)/Independent\ Study/AddOn-Files/platforms/ios/build/emulator/HelloWorld.app36"02B4A540-4A42-480C-8078-9D78ADA26D0B-
+bC73F2114-EECE-4653-8CEE-C28CD1DDB63E
+
