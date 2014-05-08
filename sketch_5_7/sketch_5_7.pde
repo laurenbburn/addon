@@ -57,7 +57,7 @@ color circColor;
 int roundCount;
 String R1;
 String[] roundNum= {
-  "1", "2", "3", "4"
+  "1", "2", "3"
 };
 color bg;
 
@@ -116,18 +116,18 @@ int pFill;
 
     //Meter
     meterWidth = 320;
-    decVal = .8;
-    meterColorRed = 55;
+    decVal = 1.4;
+    meterColorRed = 48;
 
     //buttons
     smallx = 93;
     y = 535;
     medx=155;
     largex = 227;
-    buttonFillS = color(55,70,109);
+    buttonFillS = color(48,62,96);
     buttonFillM = circColor;
     buttonFillL = circColor;
-    buttonPressed = color(55);
+    buttonPressed = color(48,62,96);
 
     //PLAYER AND ROUND
     //pFill= color(pColor[playerCount]);
@@ -204,12 +204,12 @@ void draw() {
   if (drawingScreen) {
     paint_layout();
     if (meterWidth<=0) {
-      if (roundCount <=4 && playerCount<=totalPlayers-1 ) {
+      if (roundCount <=3 && playerCount<=totalPlayers-1 ) {
         blackbg=true;
         roundPlayerCount();
         roundTransition=true;
       }
-      if (roundCount==5) {
+      if (roundCount==4) {
         blackbg=false;
         gameEnd=true;
         if (gameEnd) {
@@ -242,7 +242,7 @@ void paint_layout() {
   rect(0, 0, 320, 68);
   myFont=createFont("Avenir", 24, true);  
   textFont(myFont);
-  fill(55,70,109);
+  fill(48,62,96);
   textAlign(CENTER);
   text(R1, width/2, 42);
   //bottom bar
@@ -261,7 +261,7 @@ void paint_layout() {
 void meter() {
   fill(166,173,191);
   rect(0, 61, width, 7);
-  meterColor = color(meterColorRed, 20, 109);
+  meterColor = color(meterColorRed, 70, 109);
   fill(meterColor);
   rect(0, 61, meterWidth, 7);
   if (mousePressed) {
@@ -273,7 +273,7 @@ void meter() {
     meterWidth-=decVal;
   }
   if (meterWidth<(width*.6)& meterWidth>0) {
-    meterColorRed++;
+    meterColorRed+=2;
   }
 }
 
@@ -283,7 +283,7 @@ void mousePressed() {
   if (drawingScreen&& !(blackbg)) {
    
      drawingMode = true; 
-     buttonFillS = color(55);
+     buttonFillS = color(48,62,96);
      W = circS;
      mousePress = true;
      //if (drawingMode){
@@ -308,7 +308,7 @@ void mousePressed() {
 
     if ((medium==true)) {
       W = circM; 
-      buttonFillM = color(55,70,109);
+      buttonFillM = color(48,62,96);
       buttonFillS = color(166,173,191);
       buttonFillL = color(166,173,191);
       small = false;
@@ -316,7 +316,7 @@ void mousePressed() {
     }
     if ((small==true)) {
       W= circS;
-      buttonFillS = color(55,70,109);
+      buttonFillS = color(48,62,96);
       buttonFillM = color(166,173,191);
       buttonFillL = color(166,173,191);
       medium = false;
@@ -324,7 +324,7 @@ void mousePressed() {
     }
     if ((large == true)) {
       W = circL; 
-      buttonFillL = color(55,70,109);
+      buttonFillL = color(48,62,96);
       buttonFillM = color(166,173,191);
       buttonFillS = color(166,173,191);
       small = false;
@@ -332,7 +332,7 @@ void mousePressed() {
     }
   }if (drawingScreen&& blackbg){
       W= circS;
-      buttonFillS = color(55,70,109);
+      buttonFillS = color(48,62,96);
       buttonFillM = color(166,173,191);
       buttonFillL = color(166,173,191);
       medium = false;
@@ -347,31 +347,31 @@ void mouseDragged() {
   mouseDrag=true;
   if (drawingScreen && !(blackbg)) {
     drawingMode = true;
-    buttonFillS = color(55);
+    buttonFillS = color(48,62,96);
     W = circS;
     //  drawing.fill(pFill);
     //  drawing.ellipse(mouseX,mouseY,W);
     if ((medium==true)) {
       W = circM; 
-      buttonFillM = color(55);
-      buttonFillS = color(180);
-      buttonFillL = color(180);
+      buttonFillM = color(48,62,96);
+      buttonFillS = color(166,173,191);
+      buttonFillL = color(166,173,191);
       small = false;
       large = false;
     }
     if ((small==true)) {
       W= circS;
-      buttonFillS = color(55);
-      buttonFillM = color(180);
-      buttonFillL = color(180);
+      buttonFillS = color(48,62,96);
+      buttonFillM = color(166,173,191);
+      buttonFillL = color(166,173,191);
       medium = false;
       large = false;
     }
     if ((large == true)) {
       W = circL; 
-      buttonFillL = color(55);
-      buttonFillM = color(180);
-      buttonFillS = color(180);
+      buttonFillL = color(48,62,96);
+      buttonFillM = color(166,173,191);
+      buttonFillS = color(166,173,191);
       small = false;
       medium = false;
     }
@@ -394,7 +394,7 @@ void mouseReleased() {
       blackbg=false;
       drawingMode=false;
       meterWidth = 320;
-      meterColorRed= 55;
+      meterColorRed= 48;
       W=0;
       loop();
     }
@@ -428,7 +428,7 @@ void blackScreen() {
   meterStart=false;
   drawingMode = false;
   noStroke();
-  fill(55,70,107,240);
+  fill(48,62,96,240);
   rect(0, 0, width, height);
 }
 
@@ -460,11 +460,12 @@ void roundPlayerCount() {
     noLoop();
   }
   if (playerCount>=totalPlayers) {
-    if (roundCount<5) {
+    if (roundCount<4) {
       roundCount++;
-      if(roundCount<=4){
+      if(roundCount<=3){
       R1 = "Round "+roundCount;
       playerCount=0;
+      colorCount=0;
       playerString = playerNum[playerCount]+"'s Turn!";
       pFill=color(pColor[colorCount], pColor[colorCount+1], pColor[colorCount+2]);
       noLoop();
@@ -494,10 +495,9 @@ void gameEndScreen() {
   textSize(24);
   textAlign(CENTER);
   text(playerString, width/2, 200);
-  //fill(pFill);
-  stroke(#ffffff);
-  strokeWeight(3);
   noFill();
+  stroke(255);
+  strokeWeight(3);
   rect(width/4, height*.45, width/2, height*.1, 6);
   fill(#ffffff);
   textSize(15);
@@ -511,16 +511,17 @@ void gameEndScreen() {
 void playerTags() {
   //top bar
   noStroke();
-  fill(215,218,226);
+  fill(230);
   rect(0, 0, 320, 68);
   myFont=createFont("Avenir", 20, true);
   textFont(myFont);
-  fill(55,79,109);
+  fill(48,62,96);
   textAlign(CENTER);
   text(R1, width/2, 42);
-  noStroke();
+  stroke(230);
+  strokeWeight(1);
   //bottom bar
-  fill(235,238,246);
+  fill(252);
   rect(0, 501, 320, 67); 
   
   //text info
@@ -655,4 +656,3 @@ void playerTags() {
       }  
    }
 }
-
