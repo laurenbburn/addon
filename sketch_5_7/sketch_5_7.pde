@@ -401,7 +401,7 @@ void mouseReleased() {
   }
   if (gameEnd) {
     if (mouseX>(width/4) & mouseX<((width/2)+width/4) & mouseY > (height*.45) & mouseY<(height*.45+(height*.1))) {
-      fill(230);         
+      fill(215,218,226);         
       blackbg=false;
       drawingMode=false;
       gameEnd=false;
@@ -511,17 +511,16 @@ void gameEndScreen() {
 void playerTags() {
   //top bar
   noStroke();
-  fill(230);
+  fill(215,218,226);
   rect(0, 0, 320, 68);
   myFont=createFont("Avenir", 20, true);
   textFont(myFont);
   fill(48,62,96);
   textAlign(CENTER);
   text(R1, width/2, 42);
-  stroke(230);
-  strokeWeight(1);
+  noStroke();
   //bottom bar
-  fill(252);
+  fill(235,238,246);
   rect(0, 501, 320, 67); 
   
   //text info
